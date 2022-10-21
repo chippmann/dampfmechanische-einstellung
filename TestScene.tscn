@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
+[ext_resource path="res://objects/base/IneractableObject.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://TestScene.gd" type="Script" id=3]
+[ext_resource path="res://objects/testObject/TestAction.tres" type="Resource" id=4]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 461, 598, 31, 497, 60, 371, 563, 438, 969, 536, 685, 249, 979, 287 )
@@ -11,6 +13,13 @@ outlines = [ PoolVector2Array( 31, 497, 461, 598, 969, 536, 979, 287, 685, 249, 
 [node name="TestScene" type="Node2D"]
 script = ExtResource( 3 )
 
+[node name="IneractableObject" parent="." instance=ExtResource( 1 )]
+margin_left = 677.0
+margin_top = 267.0
+margin_right = 741.0
+margin_bottom = 331.0
+actions = [ ExtResource( 4 ) ]
+
 [node name="Navigation2D" type="Navigation2D" parent="."]
 
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D"]
@@ -19,3 +28,10 @@ navpoly = SubResource( 1 )
 [node name="Player" parent="Navigation2D" instance=ExtResource( 2 )]
 position = Vector2( 92, 411 )
 navigation = NodePath("..")
+
+[node name="IneractableObject2" parent="." instance=ExtResource( 1 )]
+margin_left = 710.0
+margin_top = 683.0
+margin_right = 774.0
+margin_bottom = 747.0
+actions = [ ExtResource( 4 ) ]

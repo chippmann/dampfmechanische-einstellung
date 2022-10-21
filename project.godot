@@ -49,6 +49,11 @@ _global_script_classes=[ {
  "language": "GDScript",
  "path": "res://Player.gd"
  }, {
+"base": "Reference",
+"class": "Uuid",
+"language": "GDScript",
+"path": "res://utils/uuid.gd"
+}, {
 "base": "Action",
 "class": "receptionBellAction",
 "language": "GDScript",
@@ -73,6 +78,7 @@ _global_script_class_icons={
 "Player": "",
 "ScrewDriverAction": "",
 "elevatorDoorAction": "",
+"Uuid": "",
 "receptionBellAction": "",
 "receptionBellCondition": "",
 "receptionReceptionistCondition": ""

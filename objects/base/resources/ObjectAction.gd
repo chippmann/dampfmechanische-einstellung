@@ -9,6 +9,7 @@ export var conditionScript: Script
 export var actionExpression: String
 export var actionScript: Script
 export var actionWaitsForAudio: bool = true
+export var playerWalkBeforeAction: bool = true
 
 
 func is_condition_met(action_name: String) -> bool:
