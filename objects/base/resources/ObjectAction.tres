@@ -1,13 +1,10 @@
-[gd_resource type="Resource" load_steps=4 format=2]
+[gd_resource type="Resource" load_steps=2 format=2]
 
 [ext_resource path="res://objects/base/resources/ObjectAction.gd" type="Script" id=1]
-[ext_resource path="res://objects/light/LightAction.gd" type="Script" id=2]
-[ext_resource path="res://objects/light/LightCondition.gd" type="Script" id=3]
 
 [resource]
+resource_local_to_scene = true
 script = ExtResource( 1 )
-name = "testAction"
-conditionExpression = "true"
-conditionScript = ExtResource( 3 )
+name = ""
+conditionExpression = ""
 actionExpression = ""
-actionScript = ExtResource( 2 )
