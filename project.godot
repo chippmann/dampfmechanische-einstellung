@@ -19,6 +19,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://objects/base/resources/Condition.gd"
 }, {
+"base": "Reference",
+"class": "ElevatorButtonAction",
+"language": "GDScript",
+"path": "res://objects/Reception/ElevatorButton/ElevatorButtonAction.gd"
+}, {
+"base": "Reference",
+"class": "ElevatorDoorCondition",
+"language": "GDScript",
+"path": "res://objects/Reception/ElevatorDoor/ElevatorDoorCondition.gd"
+}, {
 "base": "TextureButton",
 "class": "InteractableObject",
 "language": "GDScript",
@@ -33,6 +43,11 @@ _global_script_classes=[ {
 "class": "LightCondition",
 "language": "GDScript",
 "path": "res://objects/light/LightCondition.gd"
+}, {
+"base": "Action",
+"class": "ScrewDriverAction",
+"language": "GDScript",
+"path": "res://objects/Reception/ScrewDriver/ScrewDriverAction.gd"
 }, {
 "base": "Action",
 "class": "receptionBellAction",
@@ -52,9 +67,12 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Action": "",
 "Condition": "",
+"ElevatorButtonAction": "",
+"ElevatorDoorCondition": "",
 "InteractableObject": "",
 "LightAction": "",
 "LightCondition": "",
+"ScrewDriverAction": "",
 "receptionBellAction": "",
 "receptionBellCondition": "",
 "receptionReceptionistCondition": ""
