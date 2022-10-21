@@ -27,7 +27,6 @@ navpoly = SubResource( 1 )
 
 [node name="Player" parent="Navigation2D" instance=ExtResource( 2 )]
 position = Vector2( 92, 411 )
-navigation = NodePath("..")
 
 [node name="IneractableObject2" parent="." instance=ExtResource( 1 )]
 margin_left = 710.0
