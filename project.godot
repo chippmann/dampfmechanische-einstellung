@@ -9,19 +9,47 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Reference",
+"class": "Action",
+"language": "GDScript",
+"path": "res://objects/base/resources/Action.gd"
+}, {
+"base": "Reference",
+"class": "Condition",
+"language": "GDScript",
+"path": "res://objects/base/resources/Condition.gd"
+}, {
 "base": "TextureButton",
 "class": "InteractableObject",
 "language": "GDScript",
 "path": "res://objects/base/IneractableObject.gd"
+}, {
+"base": "Action",
+"class": "LightAction",
+"language": "GDScript",
+"path": "res://objects/light/LightAction.gd"
+}, {
+"base": "Condition",
+"class": "LightCondition",
+"language": "GDScript",
+"path": "res://objects/light/LightCondition.gd"
 } ]
 _global_script_class_icons={
-"InteractableObject": ""
+"Action": "",
+"Condition": "",
+"InteractableObject": "",
+"LightAction": "",
+"LightCondition": ""
 }
 
 [application]
 
 config/name="JamAtHome"
 config/icon="res://icon.png"
+
+[autoload]
+
+Inventory="*res://singletons/Inventory.gd"
 
 [gui]
 

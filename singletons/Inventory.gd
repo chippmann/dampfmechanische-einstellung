@@ -1,0 +1,19 @@
+extends Node
+# class name provided through autoload
+#class_name Inventory
+
+var _inventory := {
+	"light_bulb": {
+		
+	}
+}
+
+
+func has_object(objectId: String) -> bool:
+	return _inventory.has(objectId)
+
+
+func use_item(objectId: String) -> Object:
+	var object = _inventory.get(objectId)
+	_inventory.erase(objectId)
+	return object
