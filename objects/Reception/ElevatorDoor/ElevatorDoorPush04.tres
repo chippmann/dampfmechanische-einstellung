@@ -1,12 +1,14 @@
-[gd_resource type="Resource" load_steps=4 format=2]
+[gd_resource type="Resource" load_steps=5 format=2]
 
 [ext_resource path="res://objects/base/resources/ObjectAction.gd" type="Script" id=1]
 [ext_resource path="res://objects/Reception/ElevatorDoor/elevatorDoorAction.gd" type="Script" id=2]
 [ext_resource path="res://objects/Reception/ElevatorDoor/ElevatorDoorCondition.gd" type="Script" id=3]
+[ext_resource path="res://assets/audio/fanfare.ogg" type="AudioStream" id=4]
 
 [resource]
 script = ExtResource( 1 )
 name = "ElevatorDoorPush04"
+audio = ExtResource( 4 )
 conditionExpression = ""
 conditionScript = ExtResource( 3 )
 actionExpression = ""

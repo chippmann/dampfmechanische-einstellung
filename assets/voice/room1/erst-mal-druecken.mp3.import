@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/erst-mal-druecken.mp3-a3743202b23d3031d866bda544db4f63.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/room1/erst-mal-druecken.mp3"
+dest_files=[ "res://.import/erst-mal-druecken.mp3-a3743202b23d3031d866bda544db4f63.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

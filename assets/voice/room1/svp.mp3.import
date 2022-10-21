@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/svp.mp3-66205b51099e0021291d69e28f0e10dc.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/room1/svp.mp3"
+dest_files=[ "res://.import/svp.mp3-66205b51099e0021291d69e28f0e10dc.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
