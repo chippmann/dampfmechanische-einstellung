@@ -3,4 +3,4 @@ class_name LightAction
 
 
 func _execute() -> void:
-	Inventory.use_item("light_bulb")
+	var _light_bulb = Inventory.use_item("light_bulb")

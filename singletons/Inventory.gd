@@ -15,5 +15,5 @@ func has_object(objectId: String) -> bool:
 
 func use_item(objectId: String) -> Object:
 	var object = _inventory.get(objectId)
-	_inventory.erase(objectId)
+	var _ignored = _inventory.erase(objectId)
 	return object

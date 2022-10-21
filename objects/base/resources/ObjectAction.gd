@@ -14,7 +14,7 @@ func is_condition_met() -> bool:
 	var condition_expression_result := true
 	if conditionExpression:
 		var expression := Expression.new()
-		expression.parse(conditionExpression)
+		assert(expression.parse(conditionExpression) == OK, "Could not parse expression")
 		condition_expression_result = expression.execute([], self)
 	
 	var condition_script_result := true
@@ -27,7 +27,7 @@ func is_condition_met() -> bool:
 func execute_action() -> void:
 	if actionExpression:
 		var expression := Expression.new()
-		expression.parse(actionExpression)
+		assert(expression.parse(actionExpression) == OK, "Could not parse expression")
 		expression.execute()
 	
 	if actionScript:
