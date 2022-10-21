@@ -13,6 +13,7 @@ var _velocity := Vector2.ZERO
 var _current_action_instance_guid: String
 
 func _ready() -> void:
+# warning-ignore:return_value_discarded
 	PlayerNavigationTarget.connect("new_player_navigation_target", self, "_on_new_player_target")
 
 

@@ -9,6 +9,7 @@ onready var _audio_stream_player: AudioStreamPlayer2D = $AudioStreamPlayer2D
 var currently_running_action_instances = {}
 
 func _ready() -> void:
+# warning-ignore:return_value_discarded
 	PlayerNavigationTarget.connect("player_navigation_cancelled", self, "_on_player_navigation_cancelled")
 
 func on_press() -> void:
