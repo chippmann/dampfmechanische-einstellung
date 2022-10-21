@@ -1,3 +1,7 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://rooms/ElevatorMain.tscn" type="PackedScene" id=1]
 
 [node name="01_Act" type="Node2D"]
+
+[node name="ElevatorMain" parent="." instance=ExtResource( 1 )]

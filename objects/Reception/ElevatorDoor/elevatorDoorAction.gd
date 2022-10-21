@@ -8,4 +8,4 @@ func _execute(action_name: String) -> void:
 			GameState.receptionElevatorOpen = true
 		"ElevatorDoorPush04":
 			print("Victory!! Forward to Act01.")
-	
+			GameState.change_scene_to("res://stages/01_Act.tscn")
