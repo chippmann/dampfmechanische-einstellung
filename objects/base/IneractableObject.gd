@@ -41,6 +41,7 @@ func on_press() -> void:
 	
 	currently_running_action_instances.erase(action_instance_guid)
 
+
 func _provide_action() -> Resource:
 	for action in actions:
 		if action.is_condition_met(action.name):
