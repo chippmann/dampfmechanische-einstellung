@@ -39,6 +39,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://objects/Reception/ScrewDriver/ScrewDriverAction.gd"
 }, {
+"base": "Reference",
+"class": "elevatorDoorAction",
+"language": "GDScript",
+"path": "res://objects/Reception/ElevatorDoor/elevatorDoorAction.gd"
+}, {
 "base": "Action",
 "class": "receptionBellAction",
 "language": "GDScript",
@@ -61,6 +66,7 @@ _global_script_class_icons={
 "ElevatorDoorCondition": "",
 "InteractableObject": "",
 "ScrewDriverAction": "",
+"elevatorDoorAction": "",
 "receptionBellAction": "",
 "receptionBellCondition": "",
 "receptionReceptionistCondition": ""

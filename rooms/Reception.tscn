@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://objects/Reception/ScrewDriver/ScrewDriverPickUp.tres" type="Resource" id=1]
 [ext_resource path="res://assets/texture/Reception/Background.png" type="Texture" id=2]
@@ -16,6 +16,8 @@
 [ext_resource path="res://objects/Reception/ElevatorDoor/ElevatorDoorPush01.tres" type="Resource" id=14]
 [ext_resource path="res://objects/Reception/ElevatorButton/ElevatorButtonPress.tres" type="Resource" id=15]
 [ext_resource path="res://objects/Reception/ElevatorDoor/ElevatorDoorPush02.tres" type="Resource" id=16]
+[ext_resource path="res://objects/Reception/ElevatorDoor/ElevatorDoorPush03.tres" type="Resource" id=17]
+[ext_resource path="res://objects/Reception/ElevatorDoor/ElevatorDoorPush04.tres" type="Resource" id=18]
 
 [node name="Reception" type="Node2D"]
 
@@ -54,14 +56,14 @@ texture_normal = ExtResource( 3 )
 expand = true
 actions = [ ExtResource( 15 ) ]
 
-[node name="ElevatorDoor" parent="." instance=ExtResource( 10 )]
+[node name="ElevatorDoor" parent="." groups=["ElevatorDoor"] instance=ExtResource( 10 )]
 margin_left = 1077.0
 margin_top = 539.0
 margin_right = 1488.0
 margin_bottom = 898.0
 texture_normal = ExtResource( 5 )
 expand = true
-actions = [ ExtResource( 14 ), ExtResource( 16 ) ]
+actions = [ ExtResource( 14 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ]
 
 [node name="ScrewDriver" parent="." groups=["ScrewDriver"] instance=ExtResource( 10 )]
 margin_left = 1625.0
