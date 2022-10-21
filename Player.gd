@@ -6,6 +6,9 @@ export var movement_speed: int = 100
 export var navigation: NodePath
 onready var _navigation: Navigation2D = get_node(navigation)
 
+export var body: NodePath
+onready var _body: Sprite = get_node(body)
+
 var _velocity := Vector2.ZERO
 var _current_action_instance_guid: String
 
@@ -27,8 +30,14 @@ func _on_new_player_target(new_target: Vector2, action_instance_guid: String) ->
 	_current_action_instance_guid = action_instance_guid
 	if !$NavigationAgent2D.is_navigation_finished():
 		PlayerNavigationTarget.emit_signal("player_navigation_cancelled", action_instance_guid)
-		
-	$NavigationAgent2D.set_target_location(new_target)
+	
+	var adjusted_target := new_target
+	if new_target.x > global_position.x:
+		adjusted_target.x -= _body.get_rect().size.x
+	else:
+		adjusted_target.x += _body.get_rect().size.x
+	
+	$NavigationAgent2D.set_target_location(adjusted_target)
 
 
 func _on_NavigationAgent2D_navigation_finished() -> void:
