@@ -13,7 +13,6 @@ func _ready() -> void:
 	PlayerNavigationTarget.connect("player_navigation_cancelled", self, "_on_player_navigation_cancelled")
 
 func on_press() -> void:
-	var mouse_position := get_global_mouse_position()
 	if _is_action_executing(): return
 	print("action start")
 	
@@ -24,17 +23,17 @@ func on_press() -> void:
 		currently_running_action_instances[action_instance_guid] = action
 		print("Executing action: %s" % action.name)
 		
-		if action.audio:
+		if action.playerWalkBeforeAction:
+			PlayerNavigationTarget.emit_signal("new_player_navigation_target", rect_global_position, action_instance_guid)
+			yield(PlayerNavigationTarget, "player_navigation_finished")
+		
+		if !_is_current_action_instance_cancelled(action_instance_guid) && action.audio:
 			_audio_stream_player.set_stream(action.audio)
 			_audio_stream_player.play()
 			if action.actionWaitsForAudio:
 				yield(_audio_stream_player, "finished")
 		
-		if action.playerWalkBeforeAction:
-			PlayerNavigationTarget.emit_signal("new_player_navigation_target", mouse_position, action_instance_guid)
-			yield(PlayerNavigationTarget, "player_navigation_finished")
-		
-		if currently_running_action_instances.has(action_instance_guid):
+		if !_is_current_action_instance_cancelled(action_instance_guid):
 			action.execute_action(action.name)
 			print("Action %s finished" % action.name)
 		else:
@@ -61,3 +60,7 @@ func _on_player_navigation_cancelled(action_instance_guid: String) -> void:
 
 func _is_action_executing() -> bool:
 	return !currently_running_action_instances.empty()
+
+
+func _is_current_action_instance_cancelled(action_instance_guid: String) -> bool:
+	return !currently_running_action_instances.has(action_instance_guid)

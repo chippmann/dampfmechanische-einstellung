@@ -26,9 +26,10 @@ func _physics_process(delta: float) -> void:
 	_velocity = move_and_slide(_velocity)
 
 func _on_new_player_target(new_target: Vector2, action_instance_guid: String) -> void:
-	_current_action_instance_guid = action_instance_guid
 	if !$NavigationAgent2D.is_navigation_finished():
-		PlayerNavigationTarget.emit_signal("player_navigation_cancelled", action_instance_guid)
+		PlayerNavigationTarget.emit_signal("player_navigation_cancelled", _current_action_instance_guid)
+	
+	_current_action_instance_guid = action_instance_guid
 	
 	var adjusted_target := new_target
 	if new_target.x > global_position.x:
