@@ -22,13 +22,13 @@ func on_press() -> void:
 			_audio_stream_player.play()
 			yield(_audio_stream_player, "finished")
 		
-		action.execute_action()
+		action.execute_action(action.name)
 	
 	_is_action_executing = false
 	print("action end")
 
 func _provide_action() -> Resource:
 	for action in actions:
-		if action.is_condition_met():
+		if action.is_condition_met(action.name):
 			return action
 	return null
