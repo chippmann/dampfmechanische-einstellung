@@ -58,7 +58,12 @@ _global_script_classes=[ {
 "class": "receptionReceptionistCondition",
 "language": "GDScript",
 "path": "res://objects/Reception/Receptionist/receptionReceptionistCondition.gd"
-} ]
+}, {
+ "base": "KinematicBody2D",
+ "class": "Player",
+ "language": "GDScript",
+ "path": "res://Player.gd"
+ } ]
 _global_script_class_icons={
 "Action": "",
 "Condition": "",
@@ -69,7 +74,8 @@ _global_script_class_icons={
 "elevatorDoorAction": "",
 "receptionBellAction": "",
 "receptionBellCondition": "",
-"receptionReceptionistCondition": ""
+"receptionReceptionistCondition": "",
+"Player": ""
 }
 
 [application]
@@ -83,6 +89,7 @@ config/icon="res://icon.png"
 Inventory="*res://singletons/Inventory.gd"
 GameState="*res://singletons/GameState.gd"
 ActionRelay="*res://singletons/ActionRelay.gd"
+PlayerNavigationTarget="*res://singletons/PlayerNavigationTarget.gd"
 
 [display]
 
