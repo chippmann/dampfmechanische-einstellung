@@ -8,7 +8,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	PlayerNavigationTarget.emit_signal("new_player_navigation_target", Vector2(500, 0))
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
