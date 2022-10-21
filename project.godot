@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "TextureButton",
+"class": "InteractableObject",
+"language": "GDScript",
+"path": "res://objects/base/IneractableObject.gd"
+} ]
+_global_script_class_icons={
+"InteractableObject": ""
+}
+
 [application]
 
 config/name="JamAtHome"
