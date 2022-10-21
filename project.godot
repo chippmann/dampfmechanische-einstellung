@@ -70,12 +70,12 @@ _global_script_class_icons={
 "ElevatorButtonAction": "",
 "ElevatorDoorCondition": "",
 "InteractableObject": "",
+"Player": "",
 "ScrewDriverAction": "",
 "elevatorDoorAction": "",
 "receptionBellAction": "",
 "receptionBellCondition": "",
-"receptionReceptionistCondition": "",
-"Player": ""
+"receptionReceptionistCondition": ""
 }
 
 [application]
