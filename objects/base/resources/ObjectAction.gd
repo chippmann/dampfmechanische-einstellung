@@ -10,7 +10,7 @@ export var actionExpression: String
 export var actionScript: Script
 
 
-func is_condition_met() -> bool:
+func is_condition_met(action_name: String) -> bool:
 	var condition_expression_result := true
 	if conditionExpression:
 		var expression := Expression.new()
@@ -19,16 +19,16 @@ func is_condition_met() -> bool:
 	
 	var condition_script_result := true
 	if conditionScript:
-		condition_script_result = conditionScript.new()._is_condition_met()
+		condition_script_result = conditionScript.new()._is_condition_met(action_name)
 	
 	return condition_expression_result && condition_script_result
 
 
-func execute_action() -> void:
+func execute_action(action_name: String) -> void:
 	if actionExpression:
 		var expression := Expression.new()
 		assert(expression.parse(actionExpression) == OK, "Could not parse expression")
 		expression.execute()
 	
 	if actionScript:
-		actionScript.new()._execute()
+		actionScript.new()._execute(action_name)
