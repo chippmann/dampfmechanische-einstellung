@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/jaja.mp3-38a8a038dd9cc6332ee7971e36b16b69.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/room1/jaja.mp3"
+dest_files=[ "res://.import/jaja.mp3-38a8a038dd9cc6332ee7971e36b16b69.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

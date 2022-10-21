@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hoffentlich.mp3-b5126a3ea7e35d46fa0da553777ef00b.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/room1/hoffentlich.mp3"
+dest_files=[ "res://.import/hoffentlich.mp3-b5126a3ea7e35d46fa0da553777ef00b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nur-geduld.mp3-5475d22a7ea6ec534478723daf7c4be0.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/room1/nur-geduld.mp3"
+dest_files=[ "res://.import/nur-geduld.mp3-5475d22a7ea6ec534478723daf7c4be0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/30-stock.mp3-ddd17e044be73aff1f399acf3d997924.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/room1/30-stock.mp3"
+dest_files=[ "res://.import/30-stock.mp3-ddd17e044be73aff1f399acf3d997924.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

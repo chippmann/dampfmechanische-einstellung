@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/endlich.mp3-19fcbbc0e407cb2a1f598df4fef26191.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/room1/endlich.mp3"
+dest_files=[ "res://.import/endlich.mp3-19fcbbc0e407cb2a1f598df4fef26191.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

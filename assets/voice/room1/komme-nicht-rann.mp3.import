@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/komme-nicht-rann.mp3-970f5f7cde08a74b5b1643f944f8b2ac.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/room1/komme-nicht-rann.mp3"
+dest_files=[ "res://.import/komme-nicht-rann.mp3-970f5f7cde08a74b5b1643f944f8b2ac.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

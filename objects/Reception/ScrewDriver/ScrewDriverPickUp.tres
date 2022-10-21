@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-conditionExpression = ""
+name = "ScrewDriverPickUp"
+conditionExpression = "true"
 actionExpression = ""
