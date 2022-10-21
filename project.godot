@@ -35,16 +35,6 @@ _global_script_classes=[ {
 "path": "res://objects/base/IneractableObject.gd"
 }, {
 "base": "Action",
-"class": "LightAction",
-"language": "GDScript",
-"path": "res://objects/light/LightAction.gd"
-}, {
-"base": "Condition",
-"class": "LightCondition",
-"language": "GDScript",
-"path": "res://objects/light/LightCondition.gd"
-}, {
-"base": "Action",
 "class": "ScrewDriverAction",
 "language": "GDScript",
 "path": "res://objects/Reception/ScrewDriver/ScrewDriverAction.gd"
@@ -70,8 +60,6 @@ _global_script_class_icons={
 "ElevatorButtonAction": "",
 "ElevatorDoorCondition": "",
 "InteractableObject": "",
-"LightAction": "",
-"LightCondition": "",
 "ScrewDriverAction": "",
 "receptionBellAction": "",
 "receptionBellCondition": "",

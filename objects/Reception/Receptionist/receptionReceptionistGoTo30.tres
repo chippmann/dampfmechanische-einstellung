@@ -11,3 +11,4 @@ audio = ExtResource( 2 )
 conditionExpression = ""
 conditionScript = ExtResource( 3 )
 actionExpression = ""
+actionWaitsForAudio = true

@@ -2,11 +2,7 @@ extends Node
 # class name provided through autoload
 #class_name Inventory
 
-var _inventory := {
-	"light_bulb": {
-		
-	}
-}
+var _inventory := {}
 
 
 func has_object(objectId: String) -> bool:

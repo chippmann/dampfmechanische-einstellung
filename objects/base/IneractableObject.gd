@@ -20,7 +20,8 @@ func on_press() -> void:
 		if action.audio:
 			_audio_stream_player.set_stream(action.audio)
 			_audio_stream_player.play()
-			yield(_audio_stream_player, "finished")
+			if action.actionWaitsForAudio:
+				yield(_audio_stream_player, "finished")
 		
 		action.execute_action(action.name)
 	

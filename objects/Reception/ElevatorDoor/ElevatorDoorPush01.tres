@@ -9,3 +9,4 @@ name = "ElevatorDoorPush01"
 conditionExpression = ""
 conditionScript = ExtResource( 2 )
 actionExpression = ""
+actionWaitsForAudio = true
