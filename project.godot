@@ -45,19 +45,14 @@ _global_script_classes=[ {
 "path": "res://objects/Reception/ScrewDriver/ScrewDriverAction.gd"
 }, {
 "base": "Reference",
-"class": "elevatorDoorAction",
-"language": "GDScript",
-"path": "res://objects/Reception/ElevatorDoor/elevatorDoorAction.gd"
-}, {
- "base": "KinematicBody2D",
- "class": "Player",
- "language": "GDScript",
- "path": "res://Player.gd"
- }, {
-"base": "Reference",
 "class": "Uuid",
 "language": "GDScript",
 "path": "res://utils/uuid.gd"
+}, {
+"base": "Reference",
+"class": "elevatorDoorAction",
+"language": "GDScript",
+"path": "res://objects/Reception/ElevatorDoor/elevatorDoorAction.gd"
 }, {
 "base": "Action",
 "class": "receptionBellAction",
@@ -82,8 +77,8 @@ _global_script_class_icons={
 "InteractableObject": "",
 "Player": "",
 "ScrewDriverAction": "",
-"elevatorDoorAction": "",
 "Uuid": "",
+"elevatorDoorAction": "",
 "receptionBellAction": "",
 "receptionBellCondition": "",
 "receptionReceptionistCondition": ""
