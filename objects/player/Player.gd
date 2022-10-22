@@ -39,7 +39,7 @@ func _on_new_player_target(new_target: Vector2) -> void:
 
 func _on_NavigationAgent2D_navigation_finished() -> void:
 	print("Player navigation finished")
-	_velocity + Vector2.ZERO
+	_velocity = Vector2.ZERO
 	PlayerNavigationTarget.emit_signal("player_navigation_finished")
 
 func _on_cancel_navigation() -> void:
