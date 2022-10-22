@@ -58,7 +58,8 @@ func _play_audio(action: InteractableObjectAction) -> void:
 
 
 func _execute_action(action: InteractableObjectAction, user_data: Array) -> void:
-	if action is ObjectAction: action.execute_action(action.name)
+	if action is ObjectAction: action.execute_action(self, action.name)
+	
 	var argument_array = [action.name]
 	
 	for data in user_data:

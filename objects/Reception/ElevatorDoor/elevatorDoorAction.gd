@@ -2,7 +2,7 @@ extends Action
 class_name elevatorDoorAction
 
 
-func _execute(action_name: String) -> void:
+func _execute(_interactable_object_instance: InteractableObject, action_name: String) -> void:
 	match(action_name):
 		"ElevatorDoorPush03":
 			GameState.save_game.reception_elevator_open = true

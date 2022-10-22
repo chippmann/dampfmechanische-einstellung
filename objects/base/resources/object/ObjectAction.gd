@@ -12,9 +12,9 @@ func is_condition_met(action_name: String) -> bool:
 	return condition_expression_result && condition_script_result
 
 
-func execute_action(action_name: String) -> void:
+func execute_action(interactable_object_instance: Node, action_name: String) -> void:
 	if actionScript:
-		actionScript.new()._execute(action_name)
+		actionScript.new()._execute(interactable_object_instance, action_name)
 
 
 func restore_state(interactable_object_instance: Node, action_name: String) -> void:

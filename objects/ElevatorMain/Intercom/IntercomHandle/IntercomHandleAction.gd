@@ -2,7 +2,7 @@ extends Reference
 class_name IntercomHandleAction
 
 
-func _execute(_action_name: String) -> void:
+func _execute(_interactable_object_instance: InteractableObject, _action_name: String) -> void:
 	if GameState.save_game.act01_screwdriver_in_fuse:
 		ActionRelay.trigger("IntercomInactive", "set_visible", [false])
 		ActionRelay.trigger("IntercomConnecting", "set_visible", [false])

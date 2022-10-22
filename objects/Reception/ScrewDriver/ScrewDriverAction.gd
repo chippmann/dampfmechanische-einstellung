@@ -2,7 +2,7 @@ extends Action
 class_name ScrewDriverAction
 
 
-func _execute(_action_name: String) -> void:
+func _execute(_interactable_object_instance: InteractableObject, _action_name: String) -> void:
 	Inventory.add_item(
 		"ScrewDriver",
 		{ "preview": "res://assets/texture/Reception/ScrewDriver.png" }
