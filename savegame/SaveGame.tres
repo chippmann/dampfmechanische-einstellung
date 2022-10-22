@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://savegame/SaveGame.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+save_game_path = "user://savegame.tres"
+current_stage = 0
+inventory = {
+}
+reception_bell_count = 0
+reception_elevator_button_pressed = false
+reception_elevator_open = false
