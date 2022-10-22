@@ -34,3 +34,8 @@ func execute_action(action_name: String) -> void:
 	
 	if actionScript:
 		actionScript.new()._execute(action_name)
+
+
+func restore_state(interactable_object_instance: InteractableObject, action_name: String) -> void:
+	if actionScript:
+		actionScript.new()._restore_state(interactable_object_instance, action_name)

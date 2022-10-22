@@ -1,4 +1,4 @@
-extends Reference
+extends Action
 class_name ElevatorButtonAction
 
 

@@ -16,6 +16,5 @@ func _is_condition_met(action_name: String) -> bool:
 		"ElevatorDoorPush04":
 			return GameState.save_game.reception_elevator_button_pressed && \
 				Inventory.has_object("ScrewDriver") && \
-				Inventory.has_object("ScrewDriver") && \
 				GameState.save_game.reception_elevator_open
 	return false

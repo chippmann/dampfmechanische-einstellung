@@ -6,6 +6,11 @@ export(Array, Resource) var actions: Array = []
 
 onready var _audio_stream_player: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
+func _ready() -> void:
+	var action := _provide_action()
+	if action:
+		action.restore_state(self, action.name)
+
 func on_press() -> void:
 	var action := _provide_action()
 	if action:
