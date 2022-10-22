@@ -11,5 +11,5 @@ audio = ExtResource( 2 )
 conditionExpression = "true"
 actionExpression = ""
 actionScript = ExtResource( 3 )
-actionWaitsForAudio = true
+actionWaitsForAudio = false
 playerWalkBeforeAction = true

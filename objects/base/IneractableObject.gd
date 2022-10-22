@@ -6,40 +6,10 @@ export(Array, Resource) var actions: Array = []
 
 onready var _audio_stream_player: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
-var currently_running_action_instances = {}
-
-func _ready() -> void:
-# warning-ignore:return_value_discarded
-	PlayerNavigationTarget.connect("player_navigation_cancelled", self, "_on_player_navigation_cancelled")
-
 func on_press() -> void:
-	if _is_action_executing(): return
-	print("action start")
-	
 	var action := _provide_action()
-	var action_instance_guid := Uuid.generate()
-	
 	if action:
-		currently_running_action_instances[action_instance_guid] = action
-		print("Executing action: %s" % action.name)
-		
-		if action.playerWalkBeforeAction:
-			PlayerNavigationTarget.emit_signal("new_player_navigation_target", rect_global_position, action_instance_guid)
-			yield(PlayerNavigationTarget, "player_navigation_finished")
-		
-		if !_is_current_action_instance_cancelled(action_instance_guid) && action.audio:
-			_audio_stream_player.set_stream(action.audio)
-			_audio_stream_player.play()
-			if action.actionWaitsForAudio:
-				yield(_audio_stream_player, "finished")
-		
-		if !_is_current_action_instance_cancelled(action_instance_guid):
-			action.execute_action(action.name)
-			print("Action %s finished" % action.name)
-		else:
-			print("Action cancelled: %s" % action.name)
-	
-	currently_running_action_instances.erase(action_instance_guid)
+		ActionRelay.try_execute_action(action, funcref(self, "_play_audio"), rect_global_position)
 
 
 func _provide_action() -> Resource:
@@ -49,18 +19,9 @@ func _provide_action() -> Resource:
 	return null
 
 
-func _on_player_navigation_cancelled(action_instance_guid: String) -> void:
-	print("got action_instance_guid %s" % action_instance_guid)
-	if !currently_running_action_instances.has(action_instance_guid): return
-	
-	var action: Resource = currently_running_action_instances[action_instance_guid]
-	if action.playerWalkBeforeAction:
-		currently_running_action_instances.erase(action_instance_guid)
-
-
-func _is_action_executing() -> bool:
-	return !currently_running_action_instances.empty()
-
-
-func _is_current_action_instance_cancelled(action_instance_guid: String) -> bool:
-	return !currently_running_action_instances.has(action_instance_guid)
+func _play_audio(action: Resource) -> void:
+	if action.audio:
+		_audio_stream_player.set_stream(action.audio)
+		_audio_stream_player.play()
+		if action.actionWaitsForAudio:
+			yield(_audio_stream_player, "finished")

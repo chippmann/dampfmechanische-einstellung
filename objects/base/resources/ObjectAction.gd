@@ -8,7 +8,7 @@ export var conditionScript: Script
 
 export var actionExpression: String
 export var actionScript: Script
-export var actionWaitsForAudio: bool = true
+export var actionWaitsForAudio: bool = false
 export var playerWalkBeforeAction: bool = true
 
 
