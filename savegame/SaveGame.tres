@@ -6,6 +6,8 @@
 script = ExtResource( 1 )
 save_game_path = "user://savegame.tres"
 current_stage = 0
+player_position = {
+}
 inventory = {
 }
 reception_bell_count = 0

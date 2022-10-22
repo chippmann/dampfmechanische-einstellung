@@ -12,6 +12,10 @@ var _starting_y_pos: float
 var _starting_scale: Vector2 = Vector2(1.0, 1.0)
 
 func _ready() -> void:
+	var initial_player_pos: = GameState.get_init_player_position()
+	if initial_player_pos != Vector2.ZERO:
+		global_position = initial_player_pos
+	
 	_starting_y_pos = global_position.y
 	_starting_scale = scale
 # warning-ignore:return_value_discarded
@@ -25,7 +29,6 @@ func _process(delta: float) -> void:
 	var offset := global_position.y - _starting_y_pos
 	var target_scale :=  _starting_scale + (Vector2(1, 1) * offset * scaling_multiplier * 0.001)
 	scale = target_scale
-	print(target_scale)
 
 
 func _physics_process(delta: float) -> void:
@@ -52,6 +55,7 @@ func _on_new_player_target(new_target: Vector2) -> void:
 
 func _on_NavigationAgent2D_navigation_finished() -> void:
 	print("Player navigation finished")
+	GameState.current_player_position = global_position
 	$AnimationPlayer.stop()
 	_velocity = Vector2.ZERO
 	PlayerNavigationTarget.emit_signal("player_navigation_finished")

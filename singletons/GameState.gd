@@ -15,6 +15,7 @@ enum Stage {
 }
 
 var show_clickable_outline: bool setget _set_show_clickable_outline
+var current_player_position: Vector2 = Vector2.ZERO
 
 
 func _exit_tree() -> void:
@@ -22,6 +23,9 @@ func _exit_tree() -> void:
 
 
 func change_scene_to(stage: int) -> void:
+	if current_player_position != Vector2.ZERO:
+		save_game.player_position[save_game.current_stage] = current_player_position
+	
 	save_game.current_stage = stage
 	_save()
 # warning-ignore:return_value_discarded
@@ -43,6 +47,13 @@ func load_save_game() -> void:
 
 func start_new_game() -> void:
 	save_game = ResourceLoader.load("res://savegame/SaveGame.tres", "", true)
+
+
+func get_init_player_position() -> Vector2:
+	if save_game.player_position.has(save_game.current_stage):
+		return save_game.player_position[save_game.current_stage]
+	else:
+		return Vector2.ZERO
 
 
 func _scene_path_from_stage(stage: int) -> String:

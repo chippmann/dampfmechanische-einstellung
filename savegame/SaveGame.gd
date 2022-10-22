@@ -5,6 +5,7 @@ export var save_game_path: String = "user://savegame.tres"
 
 export var current_stage: int = 0
 
+export var player_position: Dictionary = {}
 export var inventory: Dictionary = {}
 
 export var reception_bell_count: int = 0
