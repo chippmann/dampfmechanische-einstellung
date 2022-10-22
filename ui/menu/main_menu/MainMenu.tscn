@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://ui/menu/main_menu/ContinueButton.gd" type="Script" id=1]
 [ext_resource path="res://ui/menu/main_menu/NewGameButton.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://ui/menu/main_menu/AnimationPlayer.gd" type="Script" id=8]
 [ext_resource path="res://assets/fonts/SteamWheel_h1.tres" type="DynamicFont" id=9]
 [ext_resource path="res://ui/menu/main_menu/ButtonStylebox.tres" type="StyleBox" id=10]
+[ext_resource path="res://assets/fonts/SteamWheel_button.tres" type="DynamicFont" id=11]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Default"
@@ -197,6 +198,7 @@ margin_right = 1162.0
 margin_bottom = 108.0
 rect_min_size = Vector2( 500, 100 )
 size_flags_horizontal = 4
+custom_fonts/font = ExtResource( 11 )
 custom_styles/hover = ExtResource( 10 )
 custom_styles/pressed = ExtResource( 10 )
 custom_styles/focus = ExtResource( 10 )
@@ -221,6 +223,7 @@ margin_right = 1162.0
 margin_bottom = 108.0
 rect_min_size = Vector2( 500, 100 )
 size_flags_horizontal = 4
+custom_fonts/font = ExtResource( 11 )
 custom_styles/hover = ExtResource( 10 )
 custom_styles/pressed = ExtResource( 10 )
 custom_styles/focus = ExtResource( 10 )
@@ -246,6 +249,7 @@ margin_right = 1162.0
 margin_bottom = 108.0
 rect_min_size = Vector2( 500, 100 )
 size_flags_horizontal = 4
+custom_fonts/font = ExtResource( 11 )
 custom_styles/hover = ExtResource( 10 )
 custom_styles/pressed = ExtResource( 10 )
 custom_styles/focus = ExtResource( 10 )
