@@ -8,7 +8,7 @@ func _execute(_interactable_object_instance: InteractableObject, _action_name: S
 		ActionRelay.trigger("IntercomConnecting", "set_visible", [false])
 	else:
 		ActionRelay.trigger("IntercomInactive", "set_visible", [false])
-		#WIP: Timer 3s
+		yield(_interactable_object_instance.get_tree().create_timer(1.0), "timeout")
 		ActionRelay.trigger("IntercomInactive", "set_visible", [true])
 		
 
