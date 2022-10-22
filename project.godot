@@ -160,6 +160,11 @@ _global_script_classes=[ {
 "path": "res://objects/ElevatorMain/Tableau/TableauInlet/TableauInletInventoryDropCondition.gd"
 }, {
 "base": "Reference",
+"class": "TableauInletCondition",
+"language": "GDScript",
+"path": "res://objects/ElevatorMain/Tableau/TableauInlet/TableauInletCondition.gd"
+}, {
+"base": "Reference",
 "class": "TableauInletInventoryDropAction",
 "language": "GDScript",
 "path": "res://objects/ElevatorMain/Tableau/TableauInlet/TableauInletInventoryDropAction.gd"
@@ -250,6 +255,7 @@ _global_script_class_icons={
 "TableauCondition": "",
 "TableauInletAction": "",
 "TableauInletCanInventoryDropCondition": "",
+"TableauInletCondition": "",
 "TableauInletInventoryDropAction": "",
 "TestAction": "",
 "TestCanInventoryDropCondition": "",

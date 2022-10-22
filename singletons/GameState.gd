@@ -1,6 +1,6 @@
 extends Node
 
-export var save_game: Resource = preload("res://savegame/SaveGame.tres")
+var save_game: SaveGame = preload("res://savegame/SaveGame.tres")
 
 signal show_clickable_outline_changed(new_value)
 
