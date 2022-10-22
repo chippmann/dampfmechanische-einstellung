@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://objects/Reception/ScrewDriver/ScrewDriverPickUp.tres" type="Resource" id=1]
 [ext_resource path="res://assets/texture/Reception/Background.png" type="Texture" id=2]
@@ -25,6 +25,10 @@
 [ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/005.png" type="Texture" id=23]
 [ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/003.png" type="Texture" id=24]
 [ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/001.png" type="Texture" id=25]
+[ext_resource path="res://objects/Reception/ElevatorButton/inventory/screw_driver/ScrewDriverElevatorButton.tres" type="Resource" id=26]
+[ext_resource path="res://objects/Reception/ElevatorDoor/inventory/screw_driver/ScrewDriverElevatorDoor.tres" type="Resource" id=27]
+[ext_resource path="res://objects/Reception/receptionBell/inventory/screw_driver/ScrewDriverReceptionBell.tres" type="Resource" id=28]
+[ext_resource path="res://objects/Reception/ceilingLight/inventory/screw_driver/ScrewDriverLight.tres" type="Resource" id=29]
 [ext_resource path="res://objects/player/Player.tscn" type="PackedScene" id=30]
 [ext_resource path="res://ui/InGameUiOverlay.tscn" type="PackedScene" id=31]
 
@@ -61,6 +65,7 @@ margin_right = -494.0
 margin_bottom = -236.0
 expand = true
 actions = [ ExtResource( 14 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ]
+inventory_actions = [ ExtResource( 27 ) ]
 
 [node name="ElevatorDoorAnimation" type="AnimatedSprite" parent="ElevatorDoor" groups=["ElevatorDoorAnimation"]]
 position = Vector2( 266.875, 275.86 )
@@ -82,6 +87,7 @@ margin_bottom = -723.0
 texture_normal = ExtResource( 4 )
 expand = true
 actions = [ ExtResource( 9 ) ]
+inventory_actions = [ ExtResource( 29 ) ]
 
 [node name="ReceptionBell" parent="." instance=ExtResource( 10 )]
 margin_left = 140.0
@@ -91,6 +97,7 @@ margin_bottom = -421.0
 texture_normal = ExtResource( 7 )
 expand = true
 actions = [ ExtResource( 8 ) ]
+inventory_actions = [ ExtResource( 28 ) ]
 
 [node name="ElevatorButton" parent="." instance=ExtResource( 10 )]
 margin_left = 835.0
@@ -100,6 +107,7 @@ margin_bottom = -427.0
 texture_normal = ExtResource( 3 )
 expand = true
 actions = [ ExtResource( 15 ) ]
+inventory_actions = [ ExtResource( 26 ) ]
 
 [node name="ScrewDriver" parent="." groups=["ScrewDriver"] instance=ExtResource( 10 )]
 margin_left = 1493.0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ScrewDriver_ElevatorButtonLobby.mp3-e690a4cdd2e581caf0bd08c5b341998a.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/inventoryActionAudio/ScrewDriver_ElevatorButtonLobby.mp3"
+dest_files=[ "res://.import/ScrewDriver_ElevatorButtonLobby.mp3-e690a4cdd2e581caf0bd08c5b341998a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

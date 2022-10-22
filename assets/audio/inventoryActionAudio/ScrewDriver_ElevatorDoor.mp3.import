@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ScrewDriver_ElevatorDoor.mp3-8c33bbfa5c85a6aca27af4ba2d670e15.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/inventoryActionAudio/ScrewDriver_ElevatorDoor.mp3"
+dest_files=[ "res://.import/ScrewDriver_ElevatorDoor.mp3-8c33bbfa5c85a6aca27af4ba2d670e15.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

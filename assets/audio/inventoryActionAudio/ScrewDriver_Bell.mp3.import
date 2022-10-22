@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ScrewDriver_Bell.mp3-cb2954799adaa1a35274a4715889e983.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/inventoryActionAudio/ScrewDriver_Bell.mp3"
+dest_files=[ "res://.import/ScrewDriver_Bell.mp3-cb2954799adaa1a35274a4715889e983.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

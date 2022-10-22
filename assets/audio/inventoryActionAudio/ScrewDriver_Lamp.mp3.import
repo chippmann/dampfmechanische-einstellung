@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ScrewDriver_Lamp.mp3-1303aeca11a290a3f69617331a9fca79.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/inventoryActionAudio/ScrewDriver_Lamp.mp3"
+dest_files=[ "res://.import/ScrewDriver_Lamp.mp3-1303aeca11a290a3f69617331a9fca79.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
