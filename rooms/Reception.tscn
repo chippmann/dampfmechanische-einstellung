@@ -1,10 +1,10 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://objects/Reception/ScrewDriver/ScrewDriverPickUp.tres" type="Resource" id=1]
 [ext_resource path="res://assets/texture/Reception/Background.png" type="Texture" id=2]
 [ext_resource path="res://assets/texture/Reception/ElevatorButton.png" type="Texture" id=3]
 [ext_resource path="res://assets/texture/Reception/CeilingLight.png" type="Texture" id=4]
-[ext_resource path="res://assets/texture/Reception/ElevatorDoor.png" type="Texture" id=5]
+[ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor01.png" type="Texture" id=5]
 [ext_resource path="res://assets/texture/Reception/ScrewDriver.png" type="Texture" id=6]
 [ext_resource path="res://assets/texture/Reception/ReceptionBell.png" type="Texture" id=7]
 [ext_resource path="res://objects/Reception/receptionBell/receptionBellRing.tres" type="Resource" id=8]
@@ -19,6 +19,24 @@
 [ext_resource path="res://objects/Reception/ElevatorDoor/ElevatorDoorPush03.tres" type="Resource" id=17]
 [ext_resource path="res://objects/Reception/ElevatorDoor/ElevatorDoorPush04.tres" type="Resource" id=18]
 [ext_resource path="res://assets/texture/Reception/Receptionist.png" type="Texture" id=19]
+[ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor10.png" type="Texture" id=20]
+[ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor00.png" type="Texture" id=21]
+[ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor08.png" type="Texture" id=22]
+[ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor03.png" type="Texture" id=23]
+[ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor04.png" type="Texture" id=24]
+[ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor02.png" type="Texture" id=25]
+[ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor06.png" type="Texture" id=26]
+[ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor09.png" type="Texture" id=27]
+[ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor05.png" type="Texture" id=28]
+[ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor07.png" type="Texture" id=29]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 21 ), ExtResource( 5 ), ExtResource( 25 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 28 ), ExtResource( 26 ), ExtResource( 29 ), ExtResource( 22 ), ExtResource( 27 ), ExtResource( 20 ) ],
+"loop": false,
+"name": "default",
+"speed": 12.0
+} ]
 
 [node name="Reception" type="Node2D"]
 
@@ -58,13 +76,17 @@ expand = true
 actions = [ ExtResource( 15 ) ]
 
 [node name="ElevatorDoor" parent="." groups=["ElevatorDoor"] instance=ExtResource( 10 )]
-margin_left = 1077.0
-margin_top = 539.0
-margin_right = 1488.0
-margin_bottom = 898.0
-texture_normal = ExtResource( 5 )
+margin_left = 1053.0
+margin_top = 537.0
+margin_right = 1501.0
+margin_bottom = 906.0
 expand = true
 actions = [ ExtResource( 14 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ]
+
+[node name="Animation" type="AnimatedSprite" parent="ElevatorDoor" groups=["ElevatorDoorAnimation"]]
+position = Vector2( 229, 186 )
+scale = Vector2( 1.63841, 1.18394 )
+frames = SubResource( 1 )
 
 [node name="ScrewDriver" parent="." groups=["ScrewDriver"] instance=ExtResource( 10 )]
 margin_left = 1625.0
