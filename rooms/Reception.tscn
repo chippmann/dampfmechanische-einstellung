@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://objects/Reception/ScrewDriver/ScrewDriverPickUp.tres" type="Resource" id=1]
 [ext_resource path="res://assets/texture/Reception/Background.png" type="Texture" id=2]
@@ -30,6 +30,7 @@
 [ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor05.png" type="Texture" id=28]
 [ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor07.png" type="Texture" id=29]
 [ext_resource path="res://objects/player/Player.tscn" type="PackedScene" id=30]
+[ext_resource path="res://ui/InGameUiOverlay.tscn" type="PackedScene" id=31]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -118,3 +119,5 @@ navpoly = SubResource( 2 )
 
 [node name="Player" parent="Navigation2D" instance=ExtResource( 30 )]
 position = Vector2( 867, 1000 )
+
+[node name="InGameUiOverlay" parent="." instance=ExtResource( 31 )]

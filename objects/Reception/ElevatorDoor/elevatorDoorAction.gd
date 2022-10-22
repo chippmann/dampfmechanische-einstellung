@@ -12,6 +12,6 @@ func _execute(action_name: String) -> void:
 			GameState.change_scene_to(GameState.Stage.ACT_1)
 
 
-func _restore_state(_interactable_object_instance: InteractableObject, action_name: String) -> void:
+func _restore_state(_interactable_object_instance: InteractableObject, _action_name: String) -> void:
 	if GameState.save_game.reception_elevator_open:
 		ActionRelay.trigger("ElevatorDoorAnimation","play")
