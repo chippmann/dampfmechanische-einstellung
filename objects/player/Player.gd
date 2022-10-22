@@ -1,7 +1,7 @@
 extends KinematicBody2D
 class_name Player
 
-export var movement_speed: int = 100
+export var movement_speed: int = 200
 
 export var body: NodePath
 onready var _body: Sprite = get_node(body)

@@ -11,6 +11,7 @@ body = NodePath("Sprite")
 texture = ExtResource( 2 )
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
-target_desired_distance = 15.0
+path_desired_distance = 15.0
+target_desired_distance = 30.0
 
 [connection signal="navigation_finished" from="NavigationAgent2D" to="." method="_on_NavigationAgent2D_navigation_finished"]
