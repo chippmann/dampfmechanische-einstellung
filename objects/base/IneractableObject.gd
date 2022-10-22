@@ -68,6 +68,7 @@ func _execute_action(action: InteractableObjectAction, user_data: Array) -> void
 
 
 func _set_outline_color_alpha(new_value: bool) -> void:
-	var current_coutline_color: Color = shader.get_shader_param("outline_color")
-	current_coutline_color.a = 1 if new_value else 0
-	shader.set_shader_param("outline_color", current_coutline_color)
+	if shader:
+		var current_coutline_color: Color = shader.get_shader_param("outline_color")
+		current_coutline_color.a = 1 if new_value else 0
+		shader.set_shader_param("outline_color", current_coutline_color)
