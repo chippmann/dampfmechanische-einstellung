@@ -1,0 +1,16 @@
+1. Spieler steht im Lift
+2. Spieler drückt auf offene Türe: 
+2.1 GameState.Floor==1: Spieler: "Ich will nicht wieder zurück zur Reception!"
+2.2 GameState.Floor==2-29: Spieler: "Ich glaube nicht, dass ich hier raus muss."
+2.3 GameState.Floor==30: Spieler: "Endlich!"
+3. Spieler drückt auf Bedienfeld: Szene->Bedienfeld (Spieler ausgeblendet)
+3.1 Knopf Türe zu: GameState.TüreZu = true
+3.2 Knopf Türe auf: GameState.TüreZu = false
+3.3 Knopf 1: GameState.TüreZu = true; Fahrt; GameState.Floor = 1; GameState.TüreZu = false
+3.3 Knopf 2-29: GameState.TüreZu = true; Fahrt; GameState.Floor = GENERIC; GameState.TüreZu = false
+3.4 Knopf 30: GameState.TüreZu = true; Fahrt; GameState.ElevatorStuck = true
+
+
+
+
+
