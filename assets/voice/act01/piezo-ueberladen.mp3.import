@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/piezo-ueberladen.mp3-7f38eb9048405e4f7663cb7c6287b3e0.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/piezo-ueberladen.mp3"
+dest_files=[ "res://.import/piezo-ueberladen.mp3-7f38eb9048405e4f7663cb7c6287b3e0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

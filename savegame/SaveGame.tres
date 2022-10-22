@@ -15,3 +15,4 @@ reception_elevator_button_pressed = false
 reception_elevator_open = false
 act01_tableau_open = false
 act01_screwdriver_in_fuse = false
+act01_wartungsschacht_offen = false

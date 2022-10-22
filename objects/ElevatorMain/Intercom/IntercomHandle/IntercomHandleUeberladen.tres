@@ -2,12 +2,12 @@
 
 [ext_resource path="res://objects/base/resources/object/ObjectAction.gd" type="Script" id=1]
 [ext_resource path="res://objects/ElevatorMain/Intercom/IntercomHandle/IntercomHandleAction.gd" type="Script" id=2]
-[ext_resource path="res://assets/voice/act01/piezo-aufgeladen.mp3" type="AudioStream" id=3]
+[ext_resource path="res://assets/voice/act01/piezo-ueberladen.mp3" type="AudioStream" id=3]
 [ext_resource path="res://objects/ElevatorMain/Intercom/IntercomHandle/IntercomHandleCondition.gd" type="Script" id=4]
 
 [resource]
 script = ExtResource( 1 )
-name = "IntercomHandle"
+name = "IntercomHandleUeberladen"
 audio = ExtResource( 3 )
 conditionScript = ExtResource( 4 )
 actionScript = ExtResource( 2 )
