@@ -2,6 +2,8 @@ extends Node
 
 export var save_game: Resource = preload("res://savegame/SaveGame.tres")
 
+signal show_clickable_outline_changed(new_value)
+
 enum Stage {
 	PROLOGUE,
 	ACT_1,
@@ -11,6 +13,8 @@ enum Stage {
 	ACT_1_Wartungsschacht,
 	EPILOGUE,
 }
+
+var show_clickable_outline: bool setget _set_show_clickable_outline
 
 
 func _exit_tree() -> void:
@@ -51,3 +55,8 @@ func _scene_path_from_stage(stage: int) -> String:
 		GameState.Stage.ACT_1_Wartungsschacht: return "res://rooms/Wartungsschacht.tscn"
 		GameState.Stage.EPILOGUE: return "res://stages/99_Epilogue.tscn"
 		_: return "res://stages/00_Prologue.tscn"
+
+
+func _set_show_clickable_outline(value: bool) -> void:
+	show_clickable_outline = value
+	emit_signal("show_clickable_outline_changed", value)

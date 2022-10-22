@@ -9,9 +9,7 @@
 script = ExtResource( 1 )
 name = "ElevatorDoorPush03"
 audio = ExtResource( 2 )
-conditionExpression = ""
 conditionScript = ExtResource( 3 )
-actionExpression = ""
 actionScript = ExtResource( 4 )
-actionWaitsForAudio = false
+actionWaitsForAudio = true
 playerWalkBeforeAction = false
