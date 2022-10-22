@@ -79,6 +79,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://objects/ElevatorMain/Intercom/IntercomAction.gd"
 }, {
+"base": "Reference",
+"class": "IntercomHandleAction",
+"language": "GDScript",
+"path": "res://objects/ElevatorMain/Intercom/IntercomHandle/IntercomHandleAction.gd"
+}, {
 "base": "InteractableObjectAction",
 "class": "InventoryAction",
 "language": "GDScript",
@@ -239,6 +244,7 @@ _global_script_class_icons={
 "InteractableObject": "",
 "InteractableObjectAction": "",
 "IntercomAction": "",
+"IntercomHandleAction": "",
 "InventoryAction": "",
 "InventoryDropAction": "",
 "InventoryItem": "",
