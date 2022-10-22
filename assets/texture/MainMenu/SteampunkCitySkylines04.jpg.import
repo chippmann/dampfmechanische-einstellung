@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ReceptionBell.jpg-475e5c0df4b95b9a26dbb1a0dcaaa9ba.stex"
+path="res://.import/SteampunkCitySkylines04.jpg-dde6d2f4f4070d012d7267d0b6b97c9c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://workspace/interiorDesign/ReceptionBell.jpg"
-dest_files=[ "res://.import/ReceptionBell.jpg-475e5c0df4b95b9a26dbb1a0dcaaa9ba.stex" ]
+source_file="res://assets/texture/MainMenu/SteampunkCitySkylines04.jpg"
+dest_files=[ "res://.import/SteampunkCitySkylines04.jpg-dde6d2f4f4070d012d7267d0b6b97c9c.stex" ]
 
 [params]
 
