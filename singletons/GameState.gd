@@ -25,6 +25,7 @@ func save_game_exists() -> bool:
 
 
 func _save() -> void:
+# warning-ignore:return_value_discarded
 	ResourceSaver.save(save_game.save_game_path, save_game)
 
 
