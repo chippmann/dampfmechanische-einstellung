@@ -3,6 +3,6 @@ class_name ElevatorButtonAction
 
 
 func _execute(_action_name: String) -> void:
-	GameState.receptionElevatorButtonPressed = true
-	if Inventory.has_object("ScrewDriver") and not GameState.receptionElevatorOpen:
+	GameState.save_game.reception_elevator_button_pressed = true
+	if Inventory.has_object("ScrewDriver") and not GameState.save_game.reception_elevator_open:
 		ActionRelay.trigger("ElevatorDoor", "emit_signal", ["pressed"])
