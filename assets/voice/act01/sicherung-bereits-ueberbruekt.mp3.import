@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sicherung-bereits-ueberbruekt.mp3-71866a5ddbe33b6ea504110723e884c3.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/sicherung-bereits-ueberbruekt.mp3"
+dest_files=[ "res://.import/sicherung-bereits-ueberbruekt.mp3-71866a5ddbe33b6ea504110723e884c3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

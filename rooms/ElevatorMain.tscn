@@ -136,5 +136,6 @@ navpoly = SubResource( 2 )
 
 [node name="Player" parent="Navigation2D" instance=ExtResource( 4 )]
 position = Vector2( 867, 1000 )
+scale = Vector2( 1.2, 1.2 )
 
 [node name="InGameUiOverlay" parent="." instance=ExtResource( 19 )]

@@ -160,6 +160,11 @@ _global_script_classes=[ {
 "path": "res://objects/ElevatorMain/Tableau/TableauInlet/TableauInletAction.gd"
 }, {
 "base": "Reference",
+"class": "TableauInletAlreadyFixed",
+"language": "GDScript",
+"path": "res://objects/ElevatorMain/Tableau/TableauInlet/TableauInletAlreadyFixedCondition.gd"
+}, {
+"base": "Reference",
 "class": "TableauInletCanInventoryDropCondition",
 "language": "GDScript",
 "path": "res://objects/ElevatorMain/Tableau/TableauInlet/TableauInletInventoryDropCondition.gd"
@@ -260,6 +265,7 @@ _global_script_class_icons={
 "TableauAction": "",
 "TableauCondition": "",
 "TableauInletAction": "",
+"TableauInletAlreadyFixed": "",
 "TableauInletCanInventoryDropCondition": "",
 "TableauInletCondition": "",
 "TableauInletInventoryDropAction": "",
