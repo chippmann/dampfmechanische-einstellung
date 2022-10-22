@@ -447,6 +447,7 @@ tracks/17/keys = {
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 1 )
+scaling_multiplier = 2.0
 body = NodePath("Sprite")
 
 [node name="Sprite" type="Sprite" parent="."]

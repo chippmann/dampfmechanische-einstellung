@@ -2,18 +2,30 @@ extends KinematicBody2D
 class_name Player
 
 export var movement_speed: int = 200
+export var scaling_multiplier: float = 0.5
 
 export var body: NodePath
 onready var _body: Sprite = get_node(body)
 
 var _velocity := Vector2.ZERO
+var _starting_y_pos: float
+var _starting_scale: Vector2 = Vector2(1.0, 1.0)
 
 func _ready() -> void:
+	_starting_y_pos = global_position.y
+	_starting_scale = scale
 # warning-ignore:return_value_discarded
 	PlayerNavigationTarget.connect("new_player_navigation_target", self, "_on_new_player_target")
 # warning-ignore:return_value_discarded
 	PlayerNavigationTarget.connect("cancel_navigation", self, "_on_cancel_navigation")
 	$NavigationAgent2D.set_target_location(global_position)
+
+
+func _process(delta: float) -> void:
+	var offset := global_position.y - _starting_y_pos
+	var target_scale :=  _starting_scale + (Vector2(1, 1) * offset * scaling_multiplier * 0.001)
+	scale = target_scale
+	print(target_scale)
 
 
 func _physics_process(delta: float) -> void:
