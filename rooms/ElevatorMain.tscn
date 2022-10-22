@@ -52,7 +52,6 @@ margin_bottom = 885.0
 texture = ExtResource( 3 )
 
 [node name="ElevatorDoor" type="TextureButton" parent="."]
-visible = false
 margin_left = 465.0
 margin_top = 275.0
 margin_right = 930.0
