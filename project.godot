@@ -29,11 +29,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://objects/Reception/ElevatorDoor/ElevatorDoorCondition.gd"
 }, {
-"base": "Resource",
-"class": "GlobalInteractableObjectState",
-"language": "GDScript",
-"path": "res://objects/base/resources/GlobalInteractableObjectState.gd"
-}, {
 "base": "TextureButton",
 "class": "InteractableObject",
 "language": "GDScript",
@@ -79,7 +74,6 @@ _global_script_class_icons={
 "Condition": "",
 "ElevatorButtonAction": "",
 "ElevatorDoorCondition": "",
-"GlobalInteractableObjectState": "",
 "InteractableObject": "",
 "Player": "",
 "ScrewDriverAction": "",
