@@ -3,5 +3,9 @@ class_name TableauCondition
 
 
 func _is_condition_met(_action_name: String) -> bool:
-	print("WARNING: no condition defined. Returning true")
-	return true
+	match(_action_name):
+		"TableauClosed":
+			return !GameState.save_game.act01_tableau_open
+		"TableauOpen":
+			return GameState.save_game.act01_tableau_open
+	return false

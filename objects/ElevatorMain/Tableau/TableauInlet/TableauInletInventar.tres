@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://objects/base/resources/inventory/InventoryAction.gd" type="Script" id=1]
+[ext_resource path="res://objects/ElevatorMain/Tableau/TableauInlet/TableauInletInventoryDropAction.gd" type="Script" id=2]
+[ext_resource path="res://objects/ElevatorMain/Tableau/TableauInlet/TableauInletInventoryDropCondition.gd" type="Script" id=3]
+[ext_resource path="res://assets/voice/act01/passt-wie-angegossen.mp3" type="AudioStream" id=4]
+
+[resource]
+script = ExtResource( 1 )
+name = ""
+audio = ExtResource( 4 )
+conditionScript = ExtResource( 3 )
+actionScript = ExtResource( 2 )
+actionWaitsForAudio = false
+playerWalkBeforeAction = false

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/von-hand-nicht-auf.mp3-ff5e7fb61576e77f83a6093903cabcb1.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/von-hand-nicht-auf.mp3"
+dest_files=[ "res://.import/von-hand-nicht-auf.mp3-ff5e7fb61576e77f83a6093903cabcb1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

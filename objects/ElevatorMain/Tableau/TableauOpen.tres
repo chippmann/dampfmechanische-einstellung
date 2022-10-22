@@ -6,7 +6,7 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "Tableau"
+name = "TableauOpen"
 conditionScript = ExtResource( 3 )
 actionScript = ExtResource( 2 )
 actionWaitsForAudio = false

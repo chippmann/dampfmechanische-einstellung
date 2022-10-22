@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/kein-mechanismus-zum-oeffnen.mp3-813743f9e700d3449ab438a6346c3e43.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/kein-mechanismus-zum-oeffnen.mp3"
+dest_files=[ "res://.import/kein-mechanismus-zum-oeffnen.mp3-813743f9e700d3449ab438a6346c3e43.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

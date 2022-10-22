@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/passt-wie-angegossen.mp3-9fda1a3b93f1107e0550feca2e30159a.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/passt-wie-angegossen.mp3"
+dest_files=[ "res://.import/passt-wie-angegossen.mp3-9fda1a3b93f1107e0550feca2e30159a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
