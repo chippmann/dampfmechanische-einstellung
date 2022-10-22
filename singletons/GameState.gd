@@ -5,6 +5,10 @@ export var save_game: Resource = preload("res://savegame/SaveGame.tres")
 enum Stage {
 	PROLOGUE,
 	ACT_1,
+	ACT_1_Bedienfeld,
+	ACT_1_Intercom,
+	ACT_1_Tableau,
+	ACT_1_Wartungsschacht,
 	EPILOGUE,
 }
 
@@ -41,5 +45,9 @@ func _scene_path_from_stage(stage: int) -> String:
 	match stage:
 		GameState.Stage.PROLOGUE: return "res://stages/00_Prologue.tscn"
 		GameState.Stage.ACT_1: return "res://stages/01_Act.tscn"
+		GameState.Stage.ACT_1_Bedienfeld: return "res://rooms/Bedienfeld.tscn"
+		GameState.Stage.ACT_1_Intercom: return "res://rooms/Intercom.tscn"
+		GameState.Stage.ACT_1_Tableau: return "res://rooms/Tableau.tscn"
+		GameState.Stage.ACT_1_Wartungsschacht: return "res://rooms/Wartungsschacht.tscn"
 		GameState.Stage.EPILOGUE: return "res://stages/99_Epilogue.tscn"
 		_: return "res://stages/00_Prologue.tscn"
