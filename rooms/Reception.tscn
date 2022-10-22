@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://objects/Reception/ScrewDriver/ScrewDriverPickUp.tres" type="Resource" id=1]
 [ext_resource path="res://assets/texture/Reception/Background.png" type="Texture" id=2]
@@ -31,11 +31,6 @@
 [ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor07.png" type="Texture" id=29]
 [ext_resource path="res://objects/player/Player.tscn" type="PackedScene" id=30]
 
-[sub_resource type="NavigationPolygon" id=2]
-vertices = PoolVector2Array( 1633, 997, 1723, 1060, 136, 1014, 262, 899, 804, 889, 1048, 893, 1550, 977, 1704, 912, 1864, 912, 1587, 905 )
-polygons = [ PoolIntArray( 0, 1, 2, 3, 4, 5, 6 ), PoolIntArray( 7, 8, 1, 0 ), PoolIntArray( 6, 5, 9 ) ]
-outlines = [ PoolVector2Array( 262, 899, 804, 889, 1048, 893, 1587, 905, 1550, 977, 1633, 997, 1704, 912, 1864, 912, 1723, 1060, 136, 1014 ) ]
-
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 21 ), ExtResource( 5 ), ExtResource( 25 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 28 ), ExtResource( 26 ), ExtResource( 29 ), ExtResource( 22 ), ExtResource( 27 ), ExtResource( 20 ) ],
@@ -43,6 +38,11 @@ animations = [ {
 "name": "default",
 "speed": 12.0
 } ]
+
+[sub_resource type="NavigationPolygon" id=2]
+vertices = PoolVector2Array( 1633, 997, 1723, 1060, 136, 1014, 262, 899, 804, 889, 1048, 893, 1550, 977, 1704, 912, 1864, 912, 1587, 905 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4, 5, 6 ), PoolIntArray( 7, 8, 1, 0 ), PoolIntArray( 6, 5, 9 ) ]
+outlines = [ PoolVector2Array( 262, 899, 804, 889, 1048, 893, 1587, 905, 1550, 977, 1633, 997, 1704, 912, 1864, 912, 1723, 1060, 136, 1014 ) ]
 
 [node name="Reception" type="Node2D"]
 
