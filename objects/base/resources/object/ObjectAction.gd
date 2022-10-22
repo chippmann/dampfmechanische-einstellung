@@ -1,13 +1,5 @@
-extends Resource
-
-export var name: String
-export var audio: AudioStream
-
-export var conditionScript: Script
-
-export var actionScript: Script
-export var actionWaitsForAudio: bool = false
-export var playerWalkBeforeAction: bool = true
+extends InteractableObjectAction
+class_name ObjectAction
 
 
 func is_condition_met(action_name: String) -> bool:
@@ -25,6 +17,6 @@ func execute_action(action_name: String) -> void:
 		actionScript.new()._execute(action_name)
 
 
-func restore_state(interactable_object_instance: InteractableObject, action_name: String) -> void:
+func restore_state(interactable_object_instance: Node, action_name: String) -> void:
 	if actionScript:
 		actionScript.new()._restore_state(interactable_object_instance, action_name)

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" load_steps=4 format=2]
 
-[ext_resource path="res://objects/base/resources/ObjectAction.gd" type="Script" id=1]
+[ext_resource path="res://objects/base/resources/object/ObjectAction.gd" type="Script" id=1]
 [ext_resource path="res://assets/voice/room1/hoffentlich.mp3" type="AudioStream" id=2]
 [ext_resource path="res://objects/Reception/ElevatorDoor/ElevatorDoorCondition.gd" type="Script" id=3]
 

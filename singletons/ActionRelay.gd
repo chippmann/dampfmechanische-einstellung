@@ -9,7 +9,13 @@ func _ready() -> void:
 	PlayerNavigationTarget.connect("player_navigation_cancelled", self, "_on_player_navigation_cancelled")
 
 
-func try_execute_action(action: Resource, play_audio: FuncRef, action_position: Vector2) -> void:
+func try_execute_action(
+		action: InteractableObjectAction,
+		play_audio: FuncRef,
+		execute_action: FuncRef,
+		action_position: Vector2,
+		user_data: Array = []
+) -> void:
 	if _currently_running_action != null && !_is_in_navigation_state:
 		print("Cannot execute action %s. Action %s is already running and not in navigation state" % [action.name, _currently_running_action.name])
 		return
@@ -34,15 +40,17 @@ func try_execute_action(action: Resource, play_audio: FuncRef, action_position: 
 		
 		_is_in_navigation_state = false
 	
-	var continuation = play_audio.call_func(action)
-	if continuation:
-		yield(continuation, "completed")
+	var play_audio_continuation = play_audio.call_func(action)
+	if play_audio_continuation:
+		yield(play_audio_continuation, "completed")
 	
 	# resetting before actually executing the action to be able to trigger other actions from this action
 	_currently_running_action = null
 	_is_in_navigation_state = false
 	
-	action.execute_action(action.name)
+	var execute_action_continuation = execute_action.call_func(action, user_data)
+	if execute_action_continuation:
+		yield(execute_action_continuation, "completed")
 
 
 func trigger(group_name: String, methode_name: String, parameters: Array = []) -> void:

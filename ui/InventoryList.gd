@@ -4,7 +4,9 @@ export var inventory_item_packed_scene: PackedScene
 
 
 func _ready() -> void:
+# warning-ignore:return_value_discarded
 	Inventory.connect("item_added", self, "_on_inventory_item_added")
+# warning-ignore:return_value_discarded
 	Inventory.connect("item_removed", self, "_on_inventory_item_removed")
 	
 	var inventory := Inventory.get_inventory()

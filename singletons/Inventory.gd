@@ -17,6 +17,9 @@ func use_item(objectId: String) -> Object:
 	return object
 
 
+func get_item(objectId: String) -> Object:
+	return GameState.save_game.inventory.get(objectId)
+
 func add_item(objectId: String, objectContent = {}) -> void:
 	GameState.save_game.inventory[objectId] = objectContent
 	emit_signal("item_added", objectId, objectContent)
