@@ -4,7 +4,7 @@ func _ready() -> void:
 	set_as_toplevel(true)
 	global_position = Vector2.ZERO
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if get_tree().debug_navigation_hint:
 		update()
 
