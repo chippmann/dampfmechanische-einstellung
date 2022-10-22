@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://assets/texture/ElevatorMain/Background.png" type="Texture" id=1]
 [ext_resource path="res://objects/ElevatorMain/Bedienfeld/Bedienfeld.tres" type="Resource" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://objects/ElevatorMain/Tableau/ScrewDriverOpensTableau.tres" type="Resource" id=25]
 [ext_resource path="res://objects/ElevatorMain/Tableau/ScrewDriverNotClosesTableau.tres" type="Resource" id=26]
 [ext_resource path="res://objects/ElevatorMain/Tableau/TableauOpen.tres" type="Resource" id=27]
+[ext_resource path="res://objects/ElevatorMain/Wartungsschacht/WartungsschachtOffen.tres" type="Resource" id=28]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -110,7 +111,7 @@ margin_top = 168.0
 margin_right = -386.0
 margin_bottom = -271.0
 texture_normal = ExtResource( 12 )
-actions = [ ExtResource( 23 ) ]
+actions = [ ExtResource( 23 ), ExtResource( 28 ) ]
 
 [node name="Intercom" parent="." instance=ExtResource( 18 )]
 margin_left = 215.0
