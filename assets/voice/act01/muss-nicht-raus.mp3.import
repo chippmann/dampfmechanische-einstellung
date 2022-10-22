@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/muss-nicht-raus.mp3-4ed7acce88c499a22781379f742883c8.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/muss-nicht-raus.mp3"
+dest_files=[ "res://.import/muss-nicht-raus.mp3-4ed7acce88c499a22781379f742883c8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

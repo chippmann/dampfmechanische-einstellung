@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ich-moechte-nicht-wieder-zuschrauben.mp3-2a27fa9c033ac432d87bce5b4c33622b.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/ich-moechte-nicht-wieder-zuschrauben.mp3"
+dest_files=[ "res://.import/ich-moechte-nicht-wieder-zuschrauben.mp3-2a27fa9c033ac432d87bce5b4c33622b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

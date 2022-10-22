@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/endlich-angekommen.mp3-bc016ceb33953fb5c2a2d4d365fd50db.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/endlich-angekommen.mp3"
+dest_files=[ "res://.import/endlich-angekommen.mp3-bc016ceb33953fb5c2a2d4d365fd50db.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

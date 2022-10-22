@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nicht-wieder-zurueck-zur-rezeption.mp3-56d0c660fda790d58e7f4a7d0187c8ca.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/nicht-wieder-zurueck-zur-rezeption.mp3"
+dest_files=[ "res://.import/nicht-wieder-zurueck-zur-rezeption.mp3-56d0c660fda790d58e7f4a7d0187c8ca.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
