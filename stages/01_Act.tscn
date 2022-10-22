@@ -5,3 +5,7 @@
 [node name="01_Act" type="Node2D"]
 
 [node name="ElevatorMain" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1920.0
+margin_bottom = 1080.0
