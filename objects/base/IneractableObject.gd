@@ -7,9 +7,13 @@ export(Array, Resource) var actions: Array = []
 export(Array, Resource) var inventory_actions: Array = []
 
 onready var _audio_stream_player: AudioStreamPlayer2D = $AudioStreamPlayer2D
+onready var shader: ShaderMaterial = material
 
 
 func _ready() -> void:
+	GameState.connect("show_clickable_outline_changed", self, "_set_outline_color_alpha")
+	_set_outline_color_alpha(GameState.show_clickable_outline)
+	
 	var action := _provide_action()
 	if action:
 		action.restore_state(self, action.name)
@@ -61,3 +65,9 @@ func _execute_action(action: InteractableObjectAction, user_data: Array) -> void
 		argument_array.append(data)
 	
 	if action is InventoryAction: action.callv("on_inventory_drop", argument_array)
+
+
+func _set_outline_color_alpha(new_value: bool) -> void:
+	var current_coutline_color: Color = shader.get_shader_param("outline_color")
+	current_coutline_color.a = 1 if new_value else 0
+	shader.set_shader_param("outline_color", current_coutline_color)

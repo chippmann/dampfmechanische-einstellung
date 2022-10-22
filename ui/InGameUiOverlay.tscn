@@ -1,8 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://ui/InventoryItem.tscn" type="PackedScene" id=2]
 [ext_resource path="res://ui/InventoryList.gd" type="Script" id=3]
 [ext_resource path="res://ui/menu/main_menu/ButtonStylebox.tres" type="StyleBox" id=4]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Button
+
+
+func _on_Button_pressed() -> void:
+	GameState.show_clickable_outline = !GameState.show_clickable_outline
+"
 
 [node name="InGameUiOverlay" type="CanvasLayer"]
 
@@ -42,9 +50,9 @@ size_flags_vertical = 11
 size_flags_stretch_ratio = 0.1
 
 [node name="Panel" type="PanelContainer" parent="Control/MarginContainer/VBoxContainer/ScrollContainer"]
-margin_left = 892.0
+margin_left = 861.0
 margin_top = 21.0
-margin_right = 996.0
+margin_right = 1027.0
 margin_bottom = 105.0
 size_flags_horizontal = 6
 size_flags_vertical = 10
@@ -53,10 +61,19 @@ custom_styles/panel = ExtResource( 4 )
 [node name="InventoryList" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer/ScrollContainer/Panel"]
 margin_left = 20.0
 margin_top = 10.0
-margin_right = 84.0
+margin_right = 146.0
 margin_bottom = 74.0
 rect_min_size = Vector2( 64, 64 )
 mouse_filter = 2
 custom_constants/separation = 16
 script = ExtResource( 3 )
 inventory_item_packed_scene = ExtResource( 2 )
+
+[node name="Button" type="Button" parent="Control/MarginContainer/VBoxContainer/ScrollContainer/Panel/InventoryList"]
+margin_right = 126.0
+margin_bottom = 25.0
+toggle_mode = true
+text = "Toggle outline"
+script = SubResource( 1 )
+
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/ScrollContainer/Panel/InventoryList/Button" to="Control/MarginContainer/VBoxContainer/ScrollContainer/Panel/InventoryList/Button" method="_on_Button_pressed"]
