@@ -27,6 +27,7 @@ func _physics_process(delta: float) -> void:
 	_velocity = move_and_slide(_velocity)
 
 func _on_new_player_target(new_target: Vector2) -> void:
+	$AnimationPlayer.play("walking")
 	var adjusted_target := new_target if new_target != null else global_position
 	
 	if new_target.x > global_position.x:
@@ -39,6 +40,7 @@ func _on_new_player_target(new_target: Vector2) -> void:
 
 func _on_NavigationAgent2D_navigation_finished() -> void:
 	print("Player navigation finished")
+	$AnimationPlayer.stop()
 	_velocity = Vector2.ZERO
 	PlayerNavigationTarget.emit_signal("player_navigation_finished")
 

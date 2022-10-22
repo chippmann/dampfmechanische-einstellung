@@ -461,8 +461,8 @@ target_desired_distance = 30.0
 script = ExtResource( 3 )
 
 [node name="Body" type="Node2D" parent="."]
-position = Vector2( -40, -202 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( -101, -505 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="leg_left" type="Polygon2D" parent="Body"]
 texture = ExtResource( 4 )
@@ -514,6 +514,7 @@ uv = PoolVector2Array( 352, 222, 335, 280, 350, 378, 367, 365, 390, 401, 390, 43
 bones = [ "hip", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "hip/chest", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "hip/chest/neck", PoolRealArray( 1, 1, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ), "hip/chest/neck/head", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "hip/chest/neck/arm_left", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "hip/chest/neck/arm_left/fore_arm_left", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "hip/chest/neck/arm_right", PoolRealArray( 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 1, 0 ), "hip/chest/neck/arm_right/fore_arm_right", PoolRealArray( 0, 0, 0, 0, 0.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.5, 0 ), "hip/leg_left", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "hip/leg_left/calf_left", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "hip/leg_left/calf_left/foot_left", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "hip/leg_right", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "hip/leg_right/calf_right", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "hip/leg_right/calf_right/foot_right", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
 
 [node name="Skeleton2D" type="Skeleton2D" parent="Body"]
+visible = false
 
 [node name="hip" type="Bone2D" parent="Body/Skeleton2D"]
 position = Vector2( 262, 532 )
@@ -582,6 +583,7 @@ rest = Transform2D( 0.865151, 0.501511, -0.501511, 0.865151, -42, 202 )
 default_length = 76.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+playback_speed = 1.5
 anims/RESET = SubResource( 2 )
 anims/walking = SubResource( 1 )
 
