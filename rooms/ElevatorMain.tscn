@@ -1,13 +1,113 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/texture/ElevatorMain/Background.png" type="Texture" id=1]
+[ext_resource path="res://rooms/BackgroundImage.gd" type="Script" id=2]
+[ext_resource path="res://assets/texture/ElevatorMain/ReceptionHall.png" type="Texture" id=3]
+[ext_resource path="res://objects/base/IneractableObject.gd" type="Script" id=4]
+[ext_resource path="res://assets/texture/ElevatorMain/DoorAnimation/005.png" type="Texture" id=5]
+[ext_resource path="res://assets/texture/ElevatorMain/DoorAnimation/001.png" type="Texture" id=6]
+[ext_resource path="res://assets/texture/ElevatorMain/DoorAnimation/000.png" type="Texture" id=7]
+[ext_resource path="res://assets/texture/ElevatorMain/DoorAnimation/002.png" type="Texture" id=8]
+[ext_resource path="res://assets/texture/ElevatorMain/DoorAnimation/003.png" type="Texture" id=9]
+[ext_resource path="res://assets/texture/ElevatorMain/DoorAnimation/004.png" type="Texture" id=10]
+[ext_resource path="res://assets/texture/ElevatorMain/Intercom.png" type="Texture" id=11]
+[ext_resource path="res://assets/texture/ElevatorMain/Wartungsschacht.png" type="Texture" id=12]
+[ext_resource path="res://assets/texture/ElevatorMain/Tableau.png" type="Texture" id=13]
+[ext_resource path="res://assets/texture/ElevatorMain/Handle.png" type="Texture" id=14]
+[ext_resource path="res://assets/texture/ElevatorMain/Bedienfeld.png" type="Texture" id=15]
+[ext_resource path="res://assets/texture/ElevatorMain/Office30.png" type="Texture" id=16]
+[ext_resource path="res://assets/texture/ElevatorMain/Office2-29.png" type="Texture" id=17]
 
-[node name="ElevatorMain" type="Node2D"]
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": false,
+"name": "default",
+"speed": 6.0
+} ]
 
-[node name="Background" type="ParallaxBackground" parent="."]
-
-[node name="BackgroundImage" type="TextureRect" parent="Background"]
+[node name="ElevatorMain" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+
+[node name="OuterRoomImage30" type="TextureRect" parent="."]
+margin_left = 12.0
+margin_top = 268.0
+margin_right = 1025.0
+margin_bottom = 885.0
+texture = ExtResource( 16 )
+
+[node name="OuterRoomImage2-29" type="TextureRect" parent="."]
+margin_left = 179.0
+margin_top = 268.0
+margin_right = 1203.0
+margin_bottom = 885.0
+texture = ExtResource( 17 )
+
+[node name="OuterRoomImage1" type="TextureRect" parent="."]
+margin_left = 348.0
+margin_top = 268.0
+margin_right = 1376.0
+margin_bottom = 885.0
+texture = ExtResource( 3 )
+
+[node name="ElevatorDoor" type="TextureButton" parent="."]
+visible = false
+margin_left = 465.0
+margin_top = 275.0
+margin_right = 930.0
+margin_bottom = 889.0
+script = ExtResource( 4 )
+
+[node name="ElevatorDoorAnimation" type="AnimatedSprite" parent="ElevatorDoor"]
+position = Vector2( 226, 296 )
+scale = Vector2( 1.00629, 1.00322 )
+frames = SubResource( 1 )
+
+[node name="BackgroundImage" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
 texture = ExtResource( 1 )
 expand = true
+script = ExtResource( 2 )
+
+[node name="Tableau" type="TextureButton" parent="."]
+margin_left = 1598.0
+margin_top = 439.0
+margin_right = 1776.0
+margin_bottom = 993.0
+texture_normal = ExtResource( 13 )
+script = ExtResource( 4 )
+
+[node name="Intercom" type="TextureButton" parent="."]
+margin_left = 209.0
+margin_top = 431.0
+margin_right = 277.0
+margin_bottom = 601.0
+texture_normal = ExtResource( 11 )
+script = ExtResource( 4 )
+
+[node name="Bedienfeld" type="TextureButton" parent="."]
+margin_left = 989.0
+margin_top = 447.0
+margin_right = 1099.0
+margin_bottom = 697.0
+texture_normal = ExtResource( 15 )
+script = ExtResource( 4 )
+
+[node name="Handle" type="TextureButton" parent="."]
+margin_left = 109.0
+margin_top = 180.0
+margin_right = 149.0
+margin_bottom = 657.0
+texture_normal = ExtResource( 14 )
+script = ExtResource( 4 )
+
+[node name="Wartungsschacht" type="TextureButton" parent="."]
+margin_left = 1210.0
+margin_top = 167.0
+margin_right = 1530.0
+margin_bottom = 808.0
+texture_normal = ExtResource( 12 )
+script = ExtResource( 4 )
