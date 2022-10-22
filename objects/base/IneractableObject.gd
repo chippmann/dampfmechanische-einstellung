@@ -17,6 +17,16 @@ func on_press() -> void:
 		ActionRelay.try_execute_action(action, funcref(self, "_play_audio"), rect_global_position)
 
 
+func can_drop_data(position: Vector2, data) -> bool:
+	return data is Dictionary && data.has("inventory_id")
+
+
+func drop_data(position: Vector2, data)  -> void:
+	assert(data is Dictionary && data.has("inventory_id"), "Drop data malformed. Check can_drop_data method")
+	var inventory_id = data["inventory_id"]
+	print("Dropped inventory with id %s onto me" % inventory_id)
+
+
 func _provide_action() -> Resource:
 	for action in actions:
 		if action.is_condition_met(action.name):
