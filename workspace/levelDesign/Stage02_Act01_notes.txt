@@ -1,14 +1,47 @@
-1. Spieler steht im Lift
-2. Spieler drückt auf offene Türe: 
-2.1 GameState.Floor==1: Spieler: "Ich will nicht wieder zurück zur Reception!"
-2.2 GameState.Floor==2-29: Spieler: "Ich glaube nicht, dass ich hier raus muss."
-2.3 GameState.Floor==30: Spieler: "Endlich!"
+1. Spieler steht im Lift: Szene->ElevatorMain
+2.1 Spieler drückt auf offene Türe: 
+2.1.1 GameState.Floor==1: Spieler: "Ich will nicht wieder zurück zur Reception!"
+2.1.2 GameState.Floor==2-29: Spieler: "Ich glaube nicht, dass ich hier raus muss."
+2.1.3 GameState.Floor==30: Spieler: "Endlich!": Szene->ENDE
+
+Handle mit Maulschlüssel abschrauben --> Inventar
+Tableau mit Schraubenzieher aufschrauben
+Wartungsschacht noch nicht geöffnet --> "Ich sehe keinen Öffnungsmechanismus, dass muss sicher eine dieser neuartigen elektromechanischen Türen sein."
+
 3. Spieler drückt auf Bedienfeld: Szene->Bedienfeld (Spieler ausgeblendet)
+3.0 Zurück Knopf: Szene->ElevatorMain
 3.1 Knopf Türe zu: GameState.TüreZu = true
-3.2 Knopf Türe auf: GameState.TüreZu = false
-3.3 Knopf 1: GameState.TüreZu = true; Fahrt; GameState.Floor = 1; GameState.TüreZu = false
-3.3 Knopf 2-29: GameState.TüreZu = true; Fahrt; GameState.Floor = GENERIC; GameState.TüreZu = false
+3.2 Knopf Türe auf: GameState.TüreZu = false (wenn GameState.ElevatorStuck = false)
+3.3 Knopf 1: GameState.TüreZu = true; Fahrt; GameState.Floor = 1; GameState.TüreZu = false  (wenn GameState.ElevatorStuck = false)
+3.3 Knopf 2-29: GameState.TüreZu = true; Fahrt; GameState.Floor = GENERIC; GameState.TüreZu = false  (wenn GameState.ElevatorStuck = false)
 3.4 Knopf 30: GameState.TüreZu = true; Fahrt; GameState.ElevatorStuck = true
+
+4. Spieler klickt auf Wartungsschacht: Szene->Wartungsschacht (Spieler ausgeblendet)
+
+
+Befindet sich Schlauch
+Befindet sich Maulschlüssel
+
+Schlauch einsetzen -> explodiert :)
+
+Handle am richtigen Ort rein tun / ersetzen: GameState.ElevatorStuck = false; Lift fährt in Stock 30 und Türe öffnet sich
+
+
+
+5. Spieler klickt auf Tableau: Szene->Tableau (Spieler ausgeblendet)
+
+Kurzschluss verursachen durch Kabelklemme lösen --> Paff
+
+Wartungsschacht öffnen durch Kurzschluss --> Quiiieettsch
+
+
+
+6. Spieler klickt auf Intercom NextGen 2000: Szene->Intercom (Spieler ausgeblendet)
+
+Überladung der Piezoeinheit
+"Besetzt" (wenn kein Kurzschluss) --> Piezoeinheit entladet sich
+
+
 
 
 
