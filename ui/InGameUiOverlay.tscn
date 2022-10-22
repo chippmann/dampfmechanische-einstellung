@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://ui/InventoryItem.tscn" type="PackedScene" id=2]
 [ext_resource path="res://ui/InventoryList.gd" type="Script" id=3]
+[ext_resource path="res://ui/menu/main_menu/ButtonStylebox.tres" type="StyleBox" id=4]
 
 [node name="InGameUiOverlay" type="CanvasLayer"]
 
@@ -40,14 +41,22 @@ mouse_filter = 2
 size_flags_vertical = 11
 size_flags_stretch_ratio = 0.1
 
-[node name="InventoryList" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer/ScrollContainer"]
-margin_left = 944.0
-margin_top = 105.0
-margin_right = 944.0
+[node name="Panel" type="PanelContainer" parent="Control/MarginContainer/VBoxContainer/ScrollContainer"]
+margin_left = 892.0
+margin_top = 21.0
+margin_right = 996.0
 margin_bottom = 105.0
-mouse_filter = 2
 size_flags_horizontal = 6
 size_flags_vertical = 10
+custom_styles/panel = ExtResource( 4 )
+
+[node name="InventoryList" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer/ScrollContainer/Panel"]
+margin_left = 20.0
+margin_top = 10.0
+margin_right = 84.0
+margin_bottom = 74.0
+rect_min_size = Vector2( 64, 64 )
+mouse_filter = 2
 custom_constants/separation = 16
 script = ExtResource( 3 )
 inventory_item_packed_scene = ExtResource( 2 )
