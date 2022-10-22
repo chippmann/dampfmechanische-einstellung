@@ -9,4 +9,5 @@ name = "CeilingLightCantReach"
 audio = ExtResource( 2 )
 conditionExpression = "true"
 actionExpression = ""
-actionWaitsForAudio = true
+actionWaitsForAudio = false
+playerWalkBeforeAction = true

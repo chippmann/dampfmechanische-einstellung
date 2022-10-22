@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://objects/Reception/ScrewDriver/ScrewDriverPickUp.tres" type="Resource" id=1]
 [ext_resource path="res://assets/texture/Reception/Background.png" type="Texture" id=2]
@@ -29,6 +29,7 @@
 [ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor09.png" type="Texture" id=27]
 [ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor05.png" type="Texture" id=28]
 [ext_resource path="res://assets/texture/Reception/ElevatorDoorAnimation/ElevatorDoor07.png" type="Texture" id=29]
+[ext_resource path="res://objects/player/Player.tscn" type="PackedScene" id=30]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -37,6 +38,11 @@ animations = [ {
 "name": "default",
 "speed": 12.0
 } ]
+
+[sub_resource type="NavigationPolygon" id=2]
+vertices = PoolVector2Array( 1633, 997, 1723, 1060, 136, 1014, 262, 899, 804, 889, 1048, 893, 1550, 977, 1704, 912, 1864, 912, 1587, 905 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4, 5, 6 ), PoolIntArray( 7, 8, 1, 0 ), PoolIntArray( 6, 5, 9 ) ]
+outlines = [ PoolVector2Array( 262, 899, 804, 889, 1048, 893, 1587, 905, 1550, 977, 1633, 997, 1704, 912, 1864, 912, 1723, 1060, 136, 1014 ) ]
 
 [node name="Reception" type="Node2D"]
 
@@ -104,3 +110,11 @@ margin_right = -34.0
 margin_bottom = 886.0
 texture_normal = ExtResource( 19 )
 actions = [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ]
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D"]
+navpoly = SubResource( 2 )
+
+[node name="Player" parent="Navigation2D" instance=ExtResource( 30 )]
+position = Vector2( 867, 1000 )

@@ -34,10 +34,20 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://objects/base/IneractableObject.gd"
 }, {
+"base": "KinematicBody2D",
+"class": "Player",
+"language": "GDScript",
+"path": "res://objects/player/Player.gd"
+}, {
 "base": "Action",
 "class": "ScrewDriverAction",
 "language": "GDScript",
 "path": "res://objects/Reception/ScrewDriver/ScrewDriverAction.gd"
+}, {
+"base": "Reference",
+"class": "Uuid",
+"language": "GDScript",
+"path": "res://utils/uuid.gd"
 }, {
 "base": "Reference",
 "class": "elevatorDoorAction",
@@ -65,7 +75,9 @@ _global_script_class_icons={
 "ElevatorButtonAction": "",
 "ElevatorDoorCondition": "",
 "InteractableObject": "",
+"Player": "",
 "ScrewDriverAction": "",
+"Uuid": "",
 "elevatorDoorAction": "",
 "receptionBellAction": "",
 "receptionBellCondition": "",
@@ -83,6 +95,7 @@ config/icon="res://icon.png"
 Inventory="*res://singletons/Inventory.gd"
 GameState="*res://singletons/GameState.gd"
 ActionRelay="*res://singletons/ActionRelay.gd"
+PlayerNavigationTarget="*res://singletons/PlayerNavigationTarget.gd"
 
 [display]
 
