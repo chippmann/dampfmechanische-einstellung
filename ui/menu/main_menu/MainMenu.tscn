@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://ui/menu/main_menu/ContinueButton.gd" type="Script" id=1]
 [ext_resource path="res://ui/menu/main_menu/NewGameButton.gd" type="Script" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/texture/MainMenu/SteampunkCitySkylines01.jpg" type="Texture" id=7]
 [ext_resource path="res://ui/menu/main_menu/AnimationPlayer.gd" type="Script" id=8]
 [ext_resource path="res://assets/fonts/SteamWheel_h1.tres" type="DynamicFont" id=9]
+[ext_resource path="res://ui/menu/main_menu/ButtonStylebox.tres" type="StyleBox" id=10]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Default"
@@ -176,50 +177,60 @@ text = "Jam At Home"
 align = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
-margin_top = 527.0
+margin_top = 414.0
 margin_right = 1824.0
-margin_bottom = 613.0
+margin_bottom = 650.0
 size_flags_vertical = 6
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
 margin_right = 1824.0
-margin_bottom = 41.0
+margin_bottom = 116.0
 custom_constants/margin_right = 8
 custom_constants/margin_top = 8
 custom_constants/margin_left = 8
 custom_constants/margin_bottom = 8
 
 [node name="NewGameButton" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer/MarginContainer"]
-margin_left = 787.0
+margin_left = 662.0
 margin_top = 8.0
-margin_right = 1037.0
-margin_bottom = 33.0
-rect_min_size = Vector2( 250, 0 )
+margin_right = 1162.0
+margin_bottom = 108.0
+rect_min_size = Vector2( 500, 100 )
 size_flags_horizontal = 4
+custom_styles/hover = ExtResource( 10 )
+custom_styles/pressed = ExtResource( 10 )
+custom_styles/focus = ExtResource( 10 )
+custom_styles/disabled = ExtResource( 10 )
+custom_styles/normal = ExtResource( 10 )
 text = "New Game"
 script = ExtResource( 2 )
 
 [node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
-margin_top = 45.0
+margin_top = 120.0
 margin_right = 1824.0
-margin_bottom = 86.0
+margin_bottom = 236.0
 custom_constants/margin_right = 8
 custom_constants/margin_top = 8
 custom_constants/margin_left = 8
 custom_constants/margin_bottom = 8
 
 [node name="ContinueButton" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer/MarginContainer2"]
-margin_left = 787.0
+margin_left = 662.0
 margin_top = 8.0
-margin_right = 1037.0
-margin_bottom = 33.0
-rect_min_size = Vector2( 250, 0 )
+margin_right = 1162.0
+margin_bottom = 108.0
+rect_min_size = Vector2( 500, 100 )
 size_flags_horizontal = 4
+custom_styles/hover = ExtResource( 10 )
+custom_styles/pressed = ExtResource( 10 )
+custom_styles/focus = ExtResource( 10 )
+custom_styles/disabled = ExtResource( 10 )
+custom_styles/normal = ExtResource( 10 )
 text = "Continue"
 script = ExtResource( 1 )
 
 [node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
-margin_top = 943.0
+margin_top = 868.0
 margin_right = 1824.0
 margin_bottom = 984.0
 size_flags_vertical = 0
@@ -229,12 +240,17 @@ custom_constants/margin_left = 8
 custom_constants/margin_bottom = 8
 
 [node name="QuitButton" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer3"]
-margin_left = 787.0
+margin_left = 662.0
 margin_top = 8.0
-margin_right = 1037.0
-margin_bottom = 33.0
-rect_min_size = Vector2( 250, 0 )
+margin_right = 1162.0
+margin_bottom = 108.0
+rect_min_size = Vector2( 500, 100 )
 size_flags_horizontal = 4
+custom_styles/hover = ExtResource( 10 )
+custom_styles/pressed = ExtResource( 10 )
+custom_styles/focus = ExtResource( 10 )
+custom_styles/disabled = ExtResource( 10 )
+custom_styles/normal = ExtResource( 10 )
 text = "Quit"
 script = ExtResource( 3 )
 
