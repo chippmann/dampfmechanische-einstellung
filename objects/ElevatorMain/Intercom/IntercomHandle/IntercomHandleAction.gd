@@ -9,10 +9,10 @@ func _execute(_interactable_object_instance: InteractableObject, _action_name: S
 			yield(_interactable_object_instance.get_tree().create_timer(3.0), "timeout")
 			ActionRelay.trigger("IntercomInactive", "set_visible", [true])
 		"IntercomHandleUeberladen":
+			GameState.save_game.act01_wartungsschacht_offen = true
 			ActionRelay.trigger("IntercomInactive", "set_visible", [false])
 			yield(_interactable_object_instance.get_tree().create_timer(3.0), "timeout")
 			ActionRelay.trigger("IntercomConnecting", "set_visible", [false])
-			GameState.save_game.act01_wartungsschacht_offen = true
 	return false
 
 
