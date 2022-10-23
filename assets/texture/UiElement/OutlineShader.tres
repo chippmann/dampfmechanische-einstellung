@@ -62,6 +62,7 @@ void fragment()
 }"
 
 [resource]
+resource_local_to_scene = true
 shader = SubResource( 3 )
 shader_param/intensity = 1
 shader_param/precision = 0.02
