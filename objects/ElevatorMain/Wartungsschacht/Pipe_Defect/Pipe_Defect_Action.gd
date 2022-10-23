@@ -9,3 +9,5 @@ func _execute(_interactable_object_instance: InteractableObject, _action_name: S
 func _restore_state(_interactable_object_instance: InteractableObject, _action_name: String) -> void:
 	if Inventory.has_object("Pipe_Defect"):
 		ActionRelay.trigger("Pipe_Defect", "set_visible", [false])
+	else:
+		ActionRelay.trigger("Pipe_Defect", "set_visible", [true])

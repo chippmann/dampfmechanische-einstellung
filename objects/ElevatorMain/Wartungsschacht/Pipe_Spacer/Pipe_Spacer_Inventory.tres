@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "Pipe_Spacer_Inventory"
-conditionScript = ExtResource( 3 )
-actionScript = ExtResource( 2 )
+conditionScript = ExtResource( 2 )
+actionScript = ExtResource( 3 )
 actionWaitsForAudio = false
 playerWalkBeforeAction = false

@@ -59,11 +59,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://objects/ElevatorMain/Handle/HandleAction.gd"
 }, {
-"base": "Reference",
-"class": "HandleCondition",
-"language": "GDScript",
-"path": "res://objects/ElevatorMain/Handle/HandleCondition.gd"
-}, {
 "base": "TextureButton",
 "class": "InteractableObject",
 "language": "GDScript",
@@ -259,6 +254,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://objects/ElevatorMain/Wartungsschacht/wrench/WartungsschachtWrenchAction.gd"
 }, {
+"base": "Reference",
+"class": "WrenchFunctionalPipeDropAction",
+"language": "GDScript",
+"path": "res://objects/ElevatorMain/Handle/WrenchFunctionalPipeDropAction.gd"
+}, {
+"base": "Reference",
+"class": "WrenchFunctionalPipeDropCondition",
+"language": "GDScript",
+"path": "res://objects/ElevatorMain/Handle/WrenchFunctionalPipeDropCondition.gd"
+}, {
 "base": "Action",
 "class": "elevatorDoorAction",
 "language": "GDScript",
@@ -290,7 +295,6 @@ _global_script_class_icons={
 "ElevatorButtonAction": "",
 "ElevatorDoorCondition": "",
 "HandleAction": "",
-"HandleCondition": "",
 "InteractableObject": "",
 "InteractableObjectAction": "",
 "IntercomAction": "",
@@ -330,6 +334,8 @@ _global_script_class_icons={
 "WartungsschachtAction": "",
 "WartungsschachtCondition": "",
 "WartungsschachtWrenchAction": "",
+"WrenchFunctionalPipeDropAction": "",
+"WrenchFunctionalPipeDropCondition": "",
 "elevatorDoorAction": "",
 "receptionBellAction": "",
 "receptionBellCondition": "",

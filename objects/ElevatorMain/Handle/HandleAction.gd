@@ -3,8 +3,9 @@ class_name HandleAction
 
 
 func _execute(_interactable_object_instance: InteractableObject, _action_name: String) -> void:
-	print("handle must be removed with a tool")
+	pass
 
 
 func _restore_state(_interactable_object_instance: InteractableObject, _action_name: String) -> void:
-	pass
+	if Inventory.has_object("Functional_Pipe") || GameState.save_game.act01_wartungsschacht_functional_pipe_placed:
+		ActionRelay.trigger("Pipe_Functional", "set_visible", [false])

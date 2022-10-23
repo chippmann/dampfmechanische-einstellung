@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=4 format=2]
+
+[ext_resource path="res://objects/base/resources/inventory/InventoryAction.gd" type="Script" id=1]
+[ext_resource path="res://objects/ElevatorMain/Handle/WrenchFunctionalPipeDropCondition.gd" type="Script" id=2]
+[ext_resource path="res://objects/ElevatorMain/Handle/WrenchFunctionalPipeDropAction.gd" type="Script" id=3]
+
+[resource]
+script = ExtResource( 1 )
+name = "WrenchRemovesFunctionalPipe"
+conditionScript = ExtResource( 2 )
+actionScript = ExtResource( 3 )
+actionWaitsForAudio = false
+playerWalkBeforeAction = true
