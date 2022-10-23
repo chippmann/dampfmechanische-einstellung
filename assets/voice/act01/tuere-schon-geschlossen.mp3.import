@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tuere-schon-geschlossen.mp3-c3257b6a0e1d355f1c594be82d6d89cd.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/tuere-schon-geschlossen.mp3"
+dest_files=[ "res://.import/tuere-schon-geschlossen.mp3-c3257b6a0e1d355f1c594be82d6d89cd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

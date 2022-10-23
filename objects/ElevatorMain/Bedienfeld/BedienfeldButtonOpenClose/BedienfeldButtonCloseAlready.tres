@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://objects/base/resources/object/ObjectAction.gd" type="Script" id=1]
+[ext_resource path="res://objects/ElevatorMain/Bedienfeld/BedienfeldButtonOpenClose/BedienfeldButtonsOpenCloseAction.gd" type="Script" id=2]
+[ext_resource path="res://objects/ElevatorMain/Bedienfeld/BedienfeldButtonOpenClose/BedienfeldButtonsOpenCloseCondition.gd" type="Script" id=3]
+[ext_resource path="res://assets/voice/act01/tuere-schon-geschlossen.mp3" type="AudioStream" id=4]
+
+[resource]
+script = ExtResource( 1 )
+name = "BedienfeldButtonCloseAlready"
+audio = ExtResource( 4 )
+conditionScript = ExtResource( 3 )
+actionScript = ExtResource( 2 )
+actionWaitsForAudio = true
+playerWalkBeforeAction = false

@@ -6,6 +6,7 @@ func _execute(_interactable_object_instance: InteractableObject, _action_name: S
 	match(_action_name):
 		"BedienfeldButtons2-29_first":
 			GameState.save_game.act01_bedienfeld_buttonpressedfirsttime = true
+			ActionRelay.trigger("Buttons_2-29_1", "emit_signal", ["pressed"])
 		"BedienfeldButtons2-29_notworking":
 			pass
 		"BedienfeldButtons2-29_working":

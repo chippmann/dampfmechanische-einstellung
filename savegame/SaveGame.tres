@@ -18,3 +18,4 @@ act01_screwdriver_in_fuse = false
 act01_wartungsschacht_offen = false
 act01_wartungsschacht_functional_pipe_placed = false
 act01_bedienfeld_buttonpressedfirsttime = false
+act01_door_open = true
