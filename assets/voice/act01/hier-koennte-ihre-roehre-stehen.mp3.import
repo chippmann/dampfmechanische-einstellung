@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hier-koennte-ihre-roehre-stehen.mp3-962cadb2743168e81ac6da6237b25404.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/hier-koennte-ihre-roehre-stehen.mp3"
+dest_files=[ "res://.import/hier-koennte-ihre-roehre-stehen.mp3-962cadb2743168e81ac6da6237b25404.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

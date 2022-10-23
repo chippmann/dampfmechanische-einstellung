@@ -1,11 +1,16 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://rooms/BackButton.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/texture/ElevatorMain/Room_MaintenanceShaftInterior.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/texture/ElevatorMain/Room_MaintenanceShaftInterior.png" type="Texture" id=2]
 [ext_resource path="res://objects/base/IneractableObject.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/texture/ElevatorMain/wrench.png" type="Texture" id=4]
 [ext_resource path="res://objects/ElevatorMain/Wartungsschacht/wrench/WartungsschachtWrench.tres" type="Resource" id=5]
 [ext_resource path="res://ui/InGameUiOverlay.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/texture/ElevatorMain/Wartungsschacht_Handle_Old.png" type="Texture" id=7]
+[ext_resource path="res://assets/texture/ElevatorMain/Wartungsschacht_Handle_New.png" type="Texture" id=8]
+[ext_resource path="res://objects/ElevatorMain/Wartungsschacht/Pipe_Defect/Pipe_Defect.tres" type="Resource" id=9]
+[ext_resource path="res://objects/ElevatorMain/Wartungsschacht/Pipe_Defect/Pipe_Defect_Inventory.tres" type="Resource" id=10]
+[ext_resource path="res://objects/ElevatorMain/Wartungsschacht/Pipe_Spacer/Pipe_Spacer.tres" type="Resource" id=11]
 
 [node name="Wartungsschacht" type="Control"]
 anchor_right = 1.0
@@ -23,13 +28,38 @@ __meta__ = {
 
 [node name="IneractableObject" parent="." groups=["Wrench"] instance=ExtResource( 3 )]
 modulate = Color( 0.623529, 0.623529, 0.623529, 1 )
-margin_left = 1184.0
-margin_top = 778.0
-margin_right = -480.0
-margin_bottom = -179.0
+margin_left = 599.0
+margin_top = 910.0
+margin_right = -1065.0
+margin_bottom = -46.9999
 rect_rotation = 30.7182
 rect_scale = Vector2( 0.2, 0.2 )
 texture_normal = ExtResource( 4 )
 actions = [ ExtResource( 5 ) ]
 
 [node name="InGameUiOverlay" parent="." instance=ExtResource( 6 )]
+
+[node name="Pipe_Functional" parent="." groups=["Pipe_Functional"] instance=ExtResource( 3 )]
+visible = false
+margin_left = 1242.0
+margin_top = 420.0
+margin_right = -618.0
+margin_bottom = -112.0
+texture_normal = ExtResource( 8 )
+
+[node name="Pipe_Spacer" parent="." groups=["Pipe_Spacer"] instance=ExtResource( 3 )]
+visible = false
+margin_left = 1130.0
+margin_top = 414.0
+margin_right = -531.0
+margin_bottom = -100.0
+actions = [ ExtResource( 11 ) ]
+
+[node name="Pipe_Defect" parent="." groups=["Pipe_Defect"] instance=ExtResource( 3 )]
+margin_left = 1128.0
+margin_top = 421.0
+margin_right = -533.0
+margin_bottom = -111.0
+texture_normal = ExtResource( 7 )
+actions = [ ExtResource( 9 ) ]
+inventory_actions = [ ExtResource( 10 ) ]
