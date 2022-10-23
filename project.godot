@@ -130,6 +130,16 @@ _global_script_classes=[ {
 "path": "res://objects/ElevatorMain/Wartungsschacht/Pipe_Defect/Pipe_Defect_InventoryDropAction.gd"
 }, {
 "base": "Reference",
+"class": "Pipe_Functional_Action",
+"language": "GDScript",
+"path": "res://objects/ElevatorMain/Wartungsschacht/Pipe_Functional/Pipe_Functional_Action.gd"
+}, {
+"base": "Reference",
+"class": "Pipe_Spacer_Action",
+"language": "GDScript",
+"path": "res://objects/ElevatorMain/Wartungsschacht/Pipe_Spacer/Pipe_Spacer_Action.gd"
+}, {
+"base": "Reference",
 "class": "Pipe_Spacer_CanInventoryDropCondition",
 "language": "GDScript",
 "path": "res://objects/ElevatorMain/Wartungsschacht/Pipe_Spacer/Pipe_Spacer_InventoryDropCondition.gd"
@@ -294,6 +304,8 @@ _global_script_class_icons={
 "Pipe_Defect_Action": "",
 "Pipe_Defect_CanInventoryDropCondition": "",
 "Pipe_Defect_InventoryDropAction": "",
+"Pipe_Functional_Action": "",
+"Pipe_Spacer_Action": "",
 "Pipe_Spacer_CanInventoryDropCondition": "",
 "Pipe_Spacer_InventoryDropAction": "",
 "Player": "",

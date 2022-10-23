@@ -14,6 +14,7 @@ export var reception_elevator_open: bool = false
 export var act01_tableau_open: bool = false
 export var act01_screwdriver_in_fuse: bool = false
 export var act01_wartungsschacht_offen: bool = false
+export var act01_wartungsschacht_functional_pipe_placed: bool = false
 
 
 func has_object(objectId: String) -> bool:
