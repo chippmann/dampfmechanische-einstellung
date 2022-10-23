@@ -20,3 +20,5 @@ act01_wartungsschacht_functional_pipe_placed = false
 act01_bedienfeld_buttonpressedfirsttime = false
 act01_door_open = true
 act01_current_floor = 1
+epilogue_talked = false
+epilogue_wrenchgiven = false

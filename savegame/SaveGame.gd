@@ -18,6 +18,8 @@ export var act01_wartungsschacht_functional_pipe_placed: bool = false
 export var act01_bedienfeld_buttonpressedfirsttime: bool = false
 export var act01_door_open: bool = true
 export var act01_current_floor: int = 1
+export var epilogue_talked: bool = false
+export var epilogue_wrenchgiven: bool = false
 
 
 func has_object(objectId: String) -> bool:
