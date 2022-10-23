@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://objects/base/resources/inventory/InventoryAction.gd" type="Script" id=1]
+[ext_resource path="res://assets/voice/epilogue/spass.mp3" type="AudioStream" id=2]
+[ext_resource path="res://objects/Office/Boss/InventoryDropConditionWrench.gd" type="Script" id=3]
+[ext_resource path="res://objects/Office/Boss/InventoryDropActionWrench.gd" type="Script" id=4]
+
+[resource]
+script = ExtResource( 1 )
+name = "InventoryBossWrench"
+audio = ExtResource( 2 )
+conditionScript = ExtResource( 3 )
+actionScript = ExtResource( 4 )
+actionWaitsForAudio = true
+playerWalkBeforeAction = false

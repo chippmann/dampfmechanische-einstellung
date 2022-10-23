@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/spass.mp3-bc1ec71bab0374f5cba546059bef4ddc.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/epilogue/spass.mp3"
+dest_files=[ "res://.import/spass.mp3-bc1ec71bab0374f5cba546059bef4ddc.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

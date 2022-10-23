@@ -50,6 +50,16 @@ _global_script_classes=[ {
 "path": "res://objects/base/resources/inventory/InventoryDropCondition.gd"
 }, {
 "base": "Reference",
+"class": "CanInventoryDropConditionPipe",
+"language": "GDScript",
+"path": "res://objects/Office/Boss/InventoryDropConditionPipe.gd"
+}, {
+"base": "Reference",
+"class": "CanInventoryDropConditionWrench",
+"language": "GDScript",
+"path": "res://objects/Office/Boss/InventoryDropConditionWrench.gd"
+}, {
+"base": "Reference",
 "class": "Condition",
 "language": "GDScript",
 "path": "res://objects/base/resources/object/Condition.gd"
@@ -158,6 +168,11 @@ _global_script_classes=[ {
 "class": "ObjectAction",
 "language": "GDScript",
 "path": "res://objects/base/resources/object/ObjectAction.gd"
+}, {
+"base": "Reference",
+"class": "PipeInventoryDropAction",
+"language": "GDScript",
+"path": "res://objects/Office/Boss/InventoryDropActionPipe.gd"
 }, {
 "base": "Reference",
 "class": "Pipe_Defect_Action",
@@ -314,6 +329,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://objects/ElevatorMain/Handle/WrenchFunctionalPipeDropCondition.gd"
 }, {
+"base": "Reference",
+"class": "WrenchInventoryDropAction",
+"language": "GDScript",
+"path": "res://objects/Office/Boss/InventoryDropActionWrench.gd"
+}, {
 "base": "Action",
 "class": "elevatorDoorAction",
 "language": "GDScript",
@@ -343,6 +363,8 @@ _global_script_class_icons={
 "BedienfeldButtonsOpenCloseAction": "",
 "BedienfeldButtonsOpenCloseCondition": "",
 "CanInventoryDropCondition": "",
+"CanInventoryDropConditionPipe": "",
+"CanInventoryDropConditionWrench": "",
 "Condition": "",
 "ContinueButton": "",
 "DoorAction": "",
@@ -365,6 +387,7 @@ _global_script_class_icons={
 "InventoryOnDoor": "",
 "NewGameButton": "",
 "ObjectAction": "",
+"PipeInventoryDropAction": "",
 "Pipe_Defect_Action": "",
 "Pipe_Defect_CanInventoryDropCondition": "",
 "Pipe_Defect_InventoryDropAction": "",
@@ -396,6 +419,7 @@ _global_script_class_icons={
 "WartungsschachtWrenchAction": "",
 "WrenchFunctionalPipeDropAction": "",
 "WrenchFunctionalPipeDropCondition": "",
+"WrenchInventoryDropAction": "",
 "elevatorDoorAction": "",
 "receptionBellAction": "",
 "receptionBellCondition": "",

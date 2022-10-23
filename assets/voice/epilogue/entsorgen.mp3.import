@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/entsorgen.mp3-b791c0220f77129fa9e29478e484fa50.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/epilogue/entsorgen.mp3"
+dest_files=[ "res://.import/entsorgen.mp3-b791c0220f77129fa9e29478e484fa50.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
