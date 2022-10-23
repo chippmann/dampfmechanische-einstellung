@@ -104,7 +104,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://objects/base/resources/inventory/InventoryDropAction.gd"
 }, {
-"base": "TextureButton",
+"base": "MarginContainer",
 "class": "InventoryItem",
 "language": "GDScript",
 "path": "res://ui/InventoryItem.gd"

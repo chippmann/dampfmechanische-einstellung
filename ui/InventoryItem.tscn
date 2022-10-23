@@ -1,11 +1,38 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://ui/InventoryItem.gd" type="Script" id=2]
 
-[node name="InventoryItem" type="TextureButton"]
-margin_right = 64.0
-margin_bottom = 64.0
+[sub_resource type="GDScript" id=1]
+script/source = "extends TextureButton
+
+func _ready() -> void:
+	texture_normal = get_parent().inventory_preview
+	rect_min_size = Vector2(64, 64)
+
+func get_drag_data(_position: Vector2):
+	var texture_rect = TextureRect.new()
+	texture_rect.texture = get_parent().inventory_preview
+	texture_rect.expand = true
+	texture_rect.rect_min_size = Vector2(64, 64)
+	set_drag_preview(texture_rect)
+	return { \"inventory_id\": get_parent().inventory_id }
+"
+
+[node name="InventoryItem" type="MarginContainer"]
+margin_right = 40.0
+margin_bottom = 40.0
+custom_constants/margin_right = 16
+custom_constants/margin_top = 16
+custom_constants/margin_left = 16
+custom_constants/margin_bottom = 16
+script = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureButton" parent="."]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 24.0
+margin_bottom = 24.0
 texture_normal = ExtResource( 1 )
 expand = true
-script = ExtResource( 2 )
+script = SubResource( 1 )
