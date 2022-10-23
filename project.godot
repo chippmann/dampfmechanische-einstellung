@@ -428,7 +428,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="JamAtHome"
+config/name="Dampfmechanische Einstellung"
 run/main_scene="res://ui/menu/main_menu/MainMenu.tscn"
 config/icon="res://icon.png"
 
