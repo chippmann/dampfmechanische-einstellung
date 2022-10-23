@@ -31,6 +31,7 @@ inventory_actions = [ ExtResource( 8 ), ExtResource( 7 ) ]
 [node name="InGameUiOverlay" parent="." instance=ExtResource( 4 )]
 
 [node name="BackButton" parent="." instance=ExtResource( 6 )]
+visible = false
 __meta__ = {
 "_edit_lock_": true
 }
