@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/defect-pipe-bedienfeld-zertruemmern.mp3-6c293ebe7abc3786bef164c14c9fb433.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/inventory_reactions/defect-pipe-bedienfeld-zertruemmern.mp3"
+dest_files=[ "res://.import/defect-pipe-bedienfeld-zertruemmern.mp3-6c293ebe7abc3786bef164c14c9fb433.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

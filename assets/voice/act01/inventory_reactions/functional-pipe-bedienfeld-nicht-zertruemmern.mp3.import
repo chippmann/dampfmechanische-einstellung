@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/functional-pipe-bedienfeld-nicht-zertruemmern.mp3-f91ad2bb009c3a1e32effd22d147392e.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/inventory_reactions/functional-pipe-bedienfeld-nicht-zertruemmern.mp3"
+dest_files=[ "res://.import/functional-pipe-bedienfeld-nicht-zertruemmern.mp3-f91ad2bb009c3a1e32effd22d147392e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

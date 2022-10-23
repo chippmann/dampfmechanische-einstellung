@@ -124,7 +124,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://objects/ElevatorMain/shared/InventoryIsWrenchDropCondition.gd"
 }, {
-"base": "TextureButton",
+"base": "MarginContainer",
 "class": "InventoryItem",
 "language": "GDScript",
 "path": "res://ui/InventoryItem.gd"
