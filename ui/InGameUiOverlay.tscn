@@ -89,16 +89,18 @@ size_flags_vertical = 11
 size_flags_stretch_ratio = 0.1
 
 [node name="Panel" type="PanelContainer" parent="Control/MarginContainer/VBoxContainer/ScrollContainer"]
-margin_right = 120.0
-margin_bottom = 100.0
+margin_left = 854.0
+margin_top = 5.0
+margin_right = 1034.0
+margin_bottom = 105.0
 size_flags_horizontal = 6
 size_flags_vertical = 10
 custom_styles/panel = ExtResource( 4 )
 
 [node name="InventoryList" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer/ScrollContainer/Panel"]
-margin_left = 20.0
+margin_left = 50.0
 margin_top = 10.0
-margin_right = 100.0
+margin_right = 130.0
 margin_bottom = 90.0
 rect_min_size = Vector2( 64, 64 )
 mouse_filter = 2
@@ -168,7 +170,7 @@ margin_top = 148.0
 margin_right = 1872.0
 margin_bottom = 313.0
 custom_fonts/font = ExtResource( 7 )
-text = "Pause"
+text = "Betriebspause"
 align = 1
 
 [node name="MarginContainer2" type="MarginContainer" parent="PauseMenu/MarginContainer/VBoxContainer"]
@@ -181,9 +183,9 @@ custom_constants/margin_left = 8
 custom_constants/margin_bottom = 8
 
 [node name="Continue" type="Button" parent="PauseMenu/MarginContainer/VBoxContainer/MarginContainer2"]
-margin_left = 694.0
+margin_left = 660.0
 margin_top = 8.0
-margin_right = 1194.0
+margin_right = 1228.0
 margin_bottom = 108.0
 rect_min_size = Vector2( 500, 100 )
 mouse_default_cursor_shape = 2
@@ -194,7 +196,7 @@ custom_styles/pressed = ExtResource( 4 )
 custom_styles/focus = ExtResource( 4 )
 custom_styles/disabled = ExtResource( 4 )
 custom_styles/normal = ExtResource( 4 )
-text = "Continue"
+text = "Einstellungsverfahren Fortsetzen"
 script = ExtResource( 8 )
 
 [node name="MarginContainer3" type="MarginContainer" parent="PauseMenu/MarginContainer/VBoxContainer"]
@@ -221,7 +223,7 @@ custom_styles/pressed = ExtResource( 4 )
 custom_styles/focus = ExtResource( 4 )
 custom_styles/disabled = ExtResource( 4 )
 custom_styles/normal = ExtResource( 4 )
-text = "Quit"
+text = "Kündigen"
 script = ExtResource( 8 )
 
 [connection signal="pressed" from="Control/MarginContainer/VBoxContainer/ScrollContainer/Panel/InventoryList/MarginContainer/Button" to="Control/MarginContainer/VBoxContainer/ScrollContainer/Panel/InventoryList/MarginContainer/Button" method="_on_Button_pressed"]

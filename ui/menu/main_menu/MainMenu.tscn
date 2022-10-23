@@ -30,7 +30,7 @@ margin_bottom = 1032.0
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
 margin_right = 1824.0
-margin_bottom = 197.0
+margin_bottom = 365.0
 custom_constants/margin_right = 16
 custom_constants/margin_top = 16
 custom_constants/margin_left = 16
@@ -40,15 +40,16 @@ custom_constants/margin_bottom = 16
 margin_left = 16.0
 margin_top = 16.0
 margin_right = 1808.0
-margin_bottom = 181.0
+margin_bottom = 349.0
 custom_fonts/font = ExtResource( 9 )
-text = "Jam At Home"
+text = "Dampfmechanische
+Einstellung"
 align = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
-margin_top = 414.0
+margin_top = 498.0
 margin_right = 1824.0
-margin_bottom = 650.0
+margin_bottom = 734.0
 size_flags_vertical = 6
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
@@ -60,9 +61,9 @@ custom_constants/margin_left = 8
 custom_constants/margin_bottom = 8
 
 [node name="NewGameButton" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer/MarginContainer"]
-margin_left = 662.0
+margin_left = 650.0
 margin_top = 8.0
-margin_right = 1162.0
+margin_right = 1174.0
 margin_bottom = 108.0
 rect_min_size = Vector2( 500, 100 )
 mouse_default_cursor_shape = 2
@@ -73,7 +74,7 @@ custom_styles/pressed = ExtResource( 10 )
 custom_styles/focus = ExtResource( 10 )
 custom_styles/disabled = ExtResource( 10 )
 custom_styles/normal = ExtResource( 10 )
-text = "New Game"
+text = "Einstellungsverfahren Beginnen"
 script = ExtResource( 2 )
 
 [node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
@@ -86,9 +87,9 @@ custom_constants/margin_left = 8
 custom_constants/margin_bottom = 8
 
 [node name="ContinueButton" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer/MarginContainer2"]
-margin_left = 662.0
+margin_left = 628.0
 margin_top = 8.0
-margin_right = 1162.0
+margin_right = 1196.0
 margin_bottom = 108.0
 rect_min_size = Vector2( 500, 100 )
 mouse_default_cursor_shape = 2
@@ -99,7 +100,7 @@ custom_styles/pressed = ExtResource( 10 )
 custom_styles/focus = ExtResource( 10 )
 custom_styles/disabled = ExtResource( 10 )
 custom_styles/normal = ExtResource( 10 )
-text = "Continue"
+text = "Einstellungsverfahren Fortsetzen"
 script = ExtResource( 1 )
 
 [node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
@@ -126,7 +127,7 @@ custom_styles/pressed = ExtResource( 10 )
 custom_styles/focus = ExtResource( 10 )
 custom_styles/disabled = ExtResource( 10 )
 custom_styles/normal = ExtResource( 10 )
-text = "Quit"
+text = "Kündigen"
 script = ExtResource( 3 )
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/MarginContainer/NewGameButton" to="MarginContainer/VBoxContainer/VBoxContainer/MarginContainer/NewGameButton" method="_on_NewGameButton_pressed"]
