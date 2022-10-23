@@ -61,9 +61,9 @@ custom_constants/margin_left = 8
 custom_constants/margin_bottom = 8
 
 [node name="NewGameButton" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer/MarginContainer"]
-margin_left = 650.0
+margin_left = 620.0
 margin_top = 8.0
-margin_right = 1174.0
+margin_right = 1204.0
 margin_bottom = 108.0
 rect_min_size = Vector2( 500, 100 )
 mouse_default_cursor_shape = 2
@@ -87,9 +87,9 @@ custom_constants/margin_left = 8
 custom_constants/margin_bottom = 8
 
 [node name="ContinueButton" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer/MarginContainer2"]
-margin_left = 628.0
+margin_left = 598.0
 margin_top = 8.0
-margin_right = 1196.0
+margin_right = 1226.0
 margin_bottom = 108.0
 rect_min_size = Vector2( 500, 100 )
 mouse_default_cursor_shape = 2
