@@ -17,3 +17,4 @@ act01_tableau_open = false
 act01_screwdriver_in_fuse = false
 act01_wartungsschacht_offen = false
 act01_wartungsschacht_functional_pipe_placed = false
+act01_bedienfeld_buttonpressedfirsttime = false

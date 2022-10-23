@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/steuerung-defekt.mp3-d1800f9482b83eee7f525e770899bbd0.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/steuerung-defekt.mp3"
+dest_files=[ "res://.import/steuerung-defekt.mp3-d1800f9482b83eee7f525e770899bbd0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
