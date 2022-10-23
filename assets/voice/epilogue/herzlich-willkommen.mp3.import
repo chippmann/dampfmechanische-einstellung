@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/herzlich-willkommen.mp3-d06a3ca7c8afb1dca3eb26be476a22aa.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/epilogue/herzlich-willkommen.mp3"
+dest_files=[ "res://.import/herzlich-willkommen.mp3-d06a3ca7c8afb1dca3eb26be476a22aa.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
