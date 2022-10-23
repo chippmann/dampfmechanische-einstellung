@@ -1,7 +1,7 @@
 [gd_resource type="Resource" load_steps=5 format=2]
 
 [ext_resource path="res://objects/base/resources/inventory/InventoryAction.gd" type="Script" id=1]
-[ext_resource path="res://assets/voice/epilogue/entsorgen.mp3" type="AudioStream" id=2]
+[ext_resource path="res://assets/voice/epilogue/danke.mp3" type="AudioStream" id=2]
 [ext_resource path="res://objects/Office/Boss/InventoryDropConditionPipe.gd" type="Script" id=3]
 [ext_resource path="res://objects/Office/Boss/InventoryDropActionPipe.gd" type="Script" id=4]
 

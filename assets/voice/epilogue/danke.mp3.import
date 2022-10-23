@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/danke.mp3-2928e52340f8995dfaedcbf0d6716c78.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/epilogue/danke.mp3"
+dest_files=[ "res://.import/danke.mp3-2928e52340f8995dfaedcbf0d6716c78.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
