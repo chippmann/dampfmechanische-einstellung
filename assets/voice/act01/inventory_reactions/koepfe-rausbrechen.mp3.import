@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/koepfe-rausbrechen.mp3-72b282cbd03528c110e92eb99c7f0e38.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/inventory_reactions/koepfe-rausbrechen.mp3"
+dest_files=[ "res://.import/koepfe-rausbrechen.mp3-72b282cbd03528c110e92eb99c7f0e38.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
