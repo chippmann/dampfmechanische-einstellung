@@ -69,12 +69,12 @@ Voice: ttsmp3.com"
 align = 1
 
 [node name="Date" type="Label" parent="."]
-margin_left = 1253.0
+margin_left = 1041.0
 margin_top = 877.0
-margin_right = 1897.0
+margin_right = 1891.0
 margin_bottom = 1050.0
 custom_fonts/font = ExtResource( 4 )
-text = "In 48H etwickelt.
+text = "In 48 Stunden entwickelt.
 21.-23.10.2022"
 align = 1
 
