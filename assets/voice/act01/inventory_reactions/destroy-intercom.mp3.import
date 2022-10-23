@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/destroy-intercom.mp3-e5a5fbcb16bec97dd639eb6525e20ab3.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/inventory_reactions/destroy-intercom.mp3"
+dest_files=[ "res://.import/destroy-intercom.mp3-e5a5fbcb16bec97dd639eb6525e20ab3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

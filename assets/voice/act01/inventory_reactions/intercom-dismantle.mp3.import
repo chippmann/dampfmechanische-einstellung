@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/intercom-dismantle.mp3-d808288a0c6eab04dc7a419d4e76b122.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/inventory_reactions/intercom-dismantle.mp3"
+dest_files=[ "res://.import/intercom-dismantle.mp3-d808288a0c6eab04dc7a419d4e76b122.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
