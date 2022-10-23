@@ -1,11 +1,13 @@
-[gd_resource type="Resource" load_steps=3 format=2]
+[gd_resource type="Resource" load_steps=4 format=2]
 
 [ext_resource path="res://objects/base/resources/object/ObjectAction.gd" type="Script" id=1]
 [ext_resource path="res://assets/voice/act01/von-hand-nicht-weg.mp3" type="AudioStream" id=2]
+[ext_resource path="res://objects/ElevatorMain/Wartungsschacht/Pipe_Defect/Pipe_Defect_Action.gd" type="Script" id=3]
 
 [resource]
 script = ExtResource( 1 )
 name = "Pipe_Defect"
 audio = ExtResource( 2 )
+actionScript = ExtResource( 3 )
 actionWaitsForAudio = false
 playerWalkBeforeAction = false
