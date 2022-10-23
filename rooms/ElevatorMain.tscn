@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://assets/texture/ElevatorMain/Background.png" type="Texture" id=1]
 [ext_resource path="res://objects/ElevatorMain/Bedienfeld/Bedienfeld.tres" type="Resource" id=2]
@@ -20,7 +20,7 @@
 [ext_resource path="res://objects/base/IneractableObject.tscn" type="PackedScene" id=18]
 [ext_resource path="res://ui/InGameUiOverlay.tscn" type="PackedScene" id=19]
 [ext_resource path="res://objects/ElevatorMain/Tableau/TableauClosed.tres" type="Resource" id=20]
-[ext_resource path="res://objects/ElevatorMain/Door/Door.tres" type="Resource" id=21]
+[ext_resource path="res://objects/ElevatorMain/Door/Door1.tres" type="Resource" id=21]
 [ext_resource path="res://objects/ElevatorMain/Intercom/Intercom.tres" type="Resource" id=22]
 [ext_resource path="res://objects/ElevatorMain/Wartungsschacht/Wartungsschacht.tres" type="Resource" id=23]
 [ext_resource path="res://objects/ElevatorMain/Handle/Handle.tres" type="Resource" id=24]
@@ -30,6 +30,31 @@
 [ext_resource path="res://objects/ElevatorMain/Wartungsschacht/WartungsschachtOffen.tres" type="Resource" id=28]
 [ext_resource path="res://objects/ElevatorMain/Handle/WrenchRemovesFunctionalPipe.tres" type="Resource" id=29]
 [ext_resource path="res://objects/ElevatorMain/Door/DoorClosed.tres" type="Resource" id=30]
+[ext_resource path="res://objects/ElevatorMain/Door/Door2-29.tres" type="Resource" id=31]
+[ext_resource path="res://rooms/OuterRoomImage1.gd" type="Script" id=32]
+[ext_resource path="res://objects/ElevatorMain/Door/Door30.tres" type="Resource" id=33]
+
+[sub_resource type="GDScript" id=4]
+script/source = "extends TextureRect
+
+
+# Declare member variables here. Examples:
+# var a: int = 2
+# var b: String = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	if GameState.save_game.act01_current_floor != 2:
+		visible = false
+	else:
+		visible = true
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta: float) -> void:
+#	pass
+"
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -67,26 +92,28 @@ margin_right = 1025.0
 margin_bottom = 885.0
 texture = ExtResource( 16 )
 
-[node name="OuterRoomImage2-29" type="TextureRect" parent="."]
+[node name="OuterRoomImage2-29" type="TextureRect" parent="." groups=["OuterRoomImage2-29"]]
 margin_left = 179.0
 margin_top = 268.0
 margin_right = 1203.0
 margin_bottom = 885.0
 texture = ExtResource( 17 )
+script = SubResource( 4 )
 
-[node name="OuterRoomImage1" type="TextureRect" parent="."]
+[node name="OuterRoomImage1" type="TextureRect" parent="." groups=["OuterRoomImage1"]]
 margin_left = 348.0
 margin_top = 268.0
 margin_right = 1376.0
 margin_bottom = 885.0
 texture = ExtResource( 3 )
+script = ExtResource( 32 )
 
 [node name="ElevatorDoor" parent="." instance=ExtResource( 18 )]
 margin_left = 461.0
 margin_top = 274.0
 margin_right = -981.0
 margin_bottom = -200.0
-actions = [ ExtResource( 21 ), ExtResource( 30 ) ]
+actions = [ ExtResource( 21 ), ExtResource( 31 ), ExtResource( 33 ), ExtResource( 30 ) ]
 
 [node name="ElevatorDoorAnimation" type="AnimatedSprite" parent="ElevatorDoor" groups=["ElevatorDoorAnimation"]]
 position = Vector2( 235, 305 )

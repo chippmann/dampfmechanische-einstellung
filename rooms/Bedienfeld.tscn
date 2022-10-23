@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://rooms/BackButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/texture/ElevatorMain/Room_SteampunkElevatorPanel.jpg" type="Texture" id=2]
@@ -10,6 +10,9 @@
 [ext_resource path="res://objects/ElevatorMain/Bedienfeld/BedienfeldButtonOpenClose/BedienfeldButtonOpen.tres" type="Resource" id=8]
 [ext_resource path="res://objects/ElevatorMain/Bedienfeld/BedienfeldButtonOpenClose/BedienfeldButtonOpenAlready.tres" type="Resource" id=9]
 [ext_resource path="res://objects/ElevatorMain/Bedienfeld/BedienfeldButtonOpenClose/BedienfeldButtonCloseAlready.tres" type="Resource" id=10]
+[ext_resource path="res://objects/ElevatorMain/Bedienfeld/BedienfeldButtons/BedienfeldButtons30_notworking.tres" type="Resource" id=11]
+[ext_resource path="res://objects/ElevatorMain/Bedienfeld/BedienfeldButtons/BedienfeldButtons30_first.tres" type="Resource" id=12]
+[ext_resource path="res://objects/ElevatorMain/Bedienfeld/BedienfeldButtons/BedienfeldButtons30_working.tres" type="Resource" id=13]
 
 [node name="Bedienfeld" type="Control"]
 anchor_right = 1.0
@@ -29,26 +32,33 @@ margin_right = -1337.0
 margin_bottom = -291.0
 actions = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 4 ) ]
 
-[node name="Buttons_2-29_2" parent="." groups=["Buttons_2-29_1"] instance=ExtResource( 3 )]
+[node name="Buttons_2-29_2" parent="." instance=ExtResource( 3 )]
 margin_left = 635.0
 margin_top = 23.0
 margin_right = -1178.0
 margin_bottom = -291.0
 actions = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 4 ) ]
 
-[node name="Buttons_2-29_3" parent="." groups=["Buttons_2-29_1"] instance=ExtResource( 3 )]
+[node name="Buttons_2-29_3" parent="." instance=ExtResource( 3 )]
 margin_left = 1182.0
 margin_top = 37.0
 margin_right = -631.0
 margin_bottom = -277.0
 actions = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 4 ) ]
 
-[node name="Buttons_2-29_4" parent="." groups=["Buttons_2-29_1"] instance=ExtResource( 3 )]
+[node name="Buttons_2-29_4" parent="." instance=ExtResource( 3 )]
 margin_left = 1327.0
 margin_top = 40.0
 margin_right = -486.0
 margin_bottom = -274.0
 actions = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 4 ) ]
+
+[node name="Buttons_30" parent="." groups=["Buttons_30"] instance=ExtResource( 3 )]
+margin_left = 895.0
+margin_top = 103.0
+margin_right = -853.0
+margin_bottom = -820.0
+actions = [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ]
 
 [node name="Button_open" parent="." instance=ExtResource( 3 )]
 margin_left = 716.0

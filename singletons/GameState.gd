@@ -28,6 +28,7 @@ func change_scene_to(stage: int) -> void:
 	
 	save_game.current_stage = stage
 	_save()
+	ActionRelay.reset()
 # warning-ignore:return_value_discarded
 	get_tree().change_scene(_scene_path_from_stage(stage))
 

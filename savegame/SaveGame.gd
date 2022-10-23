@@ -17,6 +17,7 @@ export var act01_wartungsschacht_offen: bool = false
 export var act01_wartungsschacht_functional_pipe_placed: bool = false
 export var act01_bedienfeld_buttonpressedfirsttime: bool = false
 export var act01_door_open: bool = true
+export var act01_current_floor: int = 1
 
 
 func has_object(objectId: String) -> bool:

@@ -8,6 +8,9 @@ signal _cancelled_action_returned
 func _ready() -> void:
 	PlayerNavigationTarget.connect("player_navigation_cancelled", self, "_on_player_navigation_cancelled")
 
+func reset() -> void:
+	_currently_running_action = null
+	_is_in_navigation_state = false
 
 func try_execute_action(
 		action: InteractableObjectAction,

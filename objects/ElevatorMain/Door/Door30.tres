@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://assets/voice/act01/endlich-angekommen.mp3" type="AudioStream" id=1]
+[ext_resource path="res://objects/base/resources/object/ObjectAction.gd" type="Script" id=2]
+[ext_resource path="res://objects/ElevatorMain/Door/DoorCondition.gd" type="Script" id=3]
+[ext_resource path="res://objects/ElevatorMain/Door/DoorAction.gd" type="Script" id=4]
+
+[resource]
+script = ExtResource( 2 )
+name = "Door30"
+audio = ExtResource( 1 )
+conditionScript = ExtResource( 3 )
+actionScript = ExtResource( 4 )
+actionWaitsForAudio = true
+playerWalkBeforeAction = true
