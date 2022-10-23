@@ -8,6 +8,7 @@ margin_left = 55.0
 margin_top = 875.0
 margin_right = 321.0
 margin_bottom = 1033.0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 1 )
 expand = true
 script = ExtResource( 2 )
