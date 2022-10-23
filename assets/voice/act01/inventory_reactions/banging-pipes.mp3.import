@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/banging-pipes.mp3-e0fd61b7aff813996de08d9e14a47b9b.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/inventory_reactions/banging-pipes.mp3"
+dest_files=[ "res://.import/banging-pipes.mp3-e0fd61b7aff813996de08d9e14a47b9b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

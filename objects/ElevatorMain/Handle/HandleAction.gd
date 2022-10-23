@@ -7,5 +7,5 @@ func _execute(_interactable_object_instance: InteractableObject, _action_name: S
 
 
 func _restore_state(_interactable_object_instance: InteractableObject, _action_name: String) -> void:
-	if Inventory.has_object("Functional_Pipe") || GameState.save_game.act01_wartungsschacht_functional_pipe_placed:
+	if Inventory.has_object("Pipe_Functional") || GameState.save_game.act01_wartungsschacht_functional_pipe_placed:
 		ActionRelay.trigger("Pipe_Functional", "set_visible", [false])
