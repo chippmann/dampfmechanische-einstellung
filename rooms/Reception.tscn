@@ -110,10 +110,12 @@ actions = [ ExtResource( 15 ) ]
 inventory_actions = [ ExtResource( 26 ) ]
 
 [node name="ScrewDriver" parent="." groups=["ScrewDriver"] instance=ExtResource( 10 )]
-margin_left = 1493.0
-margin_top = 685.0
-margin_right = -308.0
-margin_bottom = -281.0
+margin_left = 1680.0
+margin_top = 897.0
+margin_right = -121.0
+margin_bottom = -69.0
+rect_rotation = -12.9
+rect_scale = Vector2( 0.6, 0.6 )
 texture_normal = ExtResource( 6 )
 expand = true
 actions = [ ExtResource( 1 ) ]
