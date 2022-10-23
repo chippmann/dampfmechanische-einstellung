@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/knoepfe-druecken-nicht-rumschrauben.mp3-8314b84565b6db7737311b8c2921b40b.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/inventory_reactions/knoepfe-druecken-nicht-rumschrauben.mp3"
+dest_files=[ "res://.import/knoepfe-druecken-nicht-rumschrauben.mp3-8314b84565b6db7737311b8c2921b40b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
