@@ -41,15 +41,18 @@ text = "Credits"
 align = 1
 
 [node name="DEV" type="Label" parent="."]
-margin_left = 198.0
-margin_top = 262.0
-margin_right = 859.0
-margin_bottom = 771.0
+margin_left = 196.0
+margin_top = 200.0
+margin_right = 857.0
+margin_bottom = 792.0
 custom_fonts/font = ExtResource( 4 )
 text = "Devs:
-Cedric Hippmann
-Nico Bischof
-Josias Bruderer"
+Cedric, Nico, Josias
+
+Mental support:
+Sandro
+
+Host: Tiziana"
 align = 1
 
 [node name="Tools" type="Label" parent="."]
