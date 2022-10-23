@@ -38,7 +38,7 @@ func can_drop_data(_position: Vector2, data) -> bool:
 func drop_data(_position: Vector2, data)  -> void:
 	for inventory_action in inventory_actions:
 		var inventory_id: String = data["inventory_id"]
-		if inventory_action.can_handle_inventory_drop(inventory_action.name, inventory_id, Inventory.get_item(inventory_id)):
+		if inventory_action.can_handle_inventory_drop(inventory_action.name, inventory_id, data):
 			ActionRelay.try_execute_action(inventory_action, funcref(self, "_play_audio"), funcref(self, "_execute_action"), rect_global_position, [inventory_id, Inventory.get_item(inventory_id)])
 
 

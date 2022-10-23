@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=53 format=2]
 
 [ext_resource path="res://assets/texture/ElevatorMain/Background.png" type="Texture" id=1]
 [ext_resource path="res://objects/ElevatorMain/Bedienfeld/Bedienfeld.tres" type="Resource" id=2]
@@ -50,6 +50,7 @@
 [ext_resource path="res://objects/ElevatorMain/Door/InventoryOnDoor.tres" type="Resource" id=48]
 [ext_resource path="res://assets/texture/ElevatorMain/Wartungsschacht_open.png" type="Texture" id=49]
 [ext_resource path="res://assets/texture/ElevatorMain/Tableau_open.png" type="Texture" id=50]
+[ext_resource path="res://objects/ElevatorMain/Wartungsschacht/AnyInventoryOnOpenWartunsschacht.tres" type="Resource" id=51]
 
 [sub_resource type="GDScript" id=4]
 script/source = "extends TextureRect
@@ -214,7 +215,7 @@ margin_right = -386.0
 margin_bottom = -271.0
 texture_normal = ExtResource( 12 )
 actions = [ ExtResource( 23 ), ExtResource( 28 ) ]
-inventory_actions = [ ExtResource( 47 ) ]
+inventory_actions = [ ExtResource( 47 ), ExtResource( 51 ) ]
 
 [node name="Wartungsschacht_open" type="TextureRect" parent="Wartungsschacht"]
 visible = false
