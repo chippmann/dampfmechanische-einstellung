@@ -31,15 +31,16 @@ func _on_Button_pressed() -> void:
 [sub_resource type="GDScript" id=2]
 script/source = "extends Control
 
+
 func _ready() -> void:
 	$MarginContainer/VBoxContainer/MarginContainer3/Quit.visible = OS.has_feature(\"pc\")
+
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed(\"pause\"):
 		get_tree().paused = !get_tree().paused
 	
 	visible = get_tree().paused
-
 
 
 func _on_Continue_pressed() -> void:
