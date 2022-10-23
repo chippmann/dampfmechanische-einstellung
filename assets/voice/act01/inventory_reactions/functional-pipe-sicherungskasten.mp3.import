@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/functional-pipe-sicherungskasten.mp3-ffa1275323da283c8d93dbb0e67ad80f.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/inventory_reactions/functional-pipe-sicherungskasten.mp3"
+dest_files=[ "res://.import/functional-pipe-sicherungskasten.mp3-ffa1275323da283c8d93dbb0e67ad80f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

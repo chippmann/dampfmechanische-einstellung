@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/wrench-sicherungskasten.mp3-5a82bb41660d363ec711578a8fa22eb4.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/inventory_reactions/wrench-sicherungskasten.mp3"
+dest_files=[ "res://.import/wrench-sicherungskasten.mp3-5a82bb41660d363ec711578a8fa22eb4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
