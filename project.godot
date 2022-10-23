@@ -115,6 +115,16 @@ _global_script_classes=[ {
 "path": "res://objects/base/resources/inventory/InventoryDropAction.gd"
 }, {
 "base": "Reference",
+"class": "InventoryIsPipeDefectDropCondition",
+"language": "GDScript",
+"path": "res://objects/ElevatorMain/shared/InventoryIsPipeDefectDropCondition.gd"
+}, {
+"base": "Reference",
+"class": "InventoryIsPipeFunctionalDropCondition",
+"language": "GDScript",
+"path": "res://objects/ElevatorMain/shared/InventoryIsPipeFunctionalDropCondition.gd"
+}, {
+"base": "Reference",
 "class": "InventoryIsScrewDriverDropCondition",
 "language": "GDScript",
 "path": "res://objects/ElevatorMain/shared/InventoryIsScrewDriverDropCondition.gd"
@@ -124,7 +134,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://objects/ElevatorMain/shared/InventoryIsWrenchDropCondition.gd"
 }, {
-"base": "MarginContainer",
+"base": "TextureButton",
 "class": "InventoryItem",
 "language": "GDScript",
 "path": "res://ui/InventoryItem.gd"
@@ -341,6 +351,8 @@ _global_script_class_icons={
 "IntercomHandleCondition": "",
 "InventoryAction": "",
 "InventoryDropAction": "",
+"InventoryIsPipeDefectDropCondition": "",
+"InventoryIsPipeFunctionalDropCondition": "",
 "InventoryIsScrewDriverDropCondition": "",
 "InventoryIsWrenchDropCondition": "",
 "InventoryItem": "",
