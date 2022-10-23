@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/wartungsschacht-already-open.mp3-62ffeb8bf9a83c23c2e1f2583d652452.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/inventory_reactions/wartungsschacht-already-open.mp3"
+dest_files=[ "res://.import/wartungsschacht-already-open.mp3-62ffeb8bf9a83c23c2e1f2583d652452.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

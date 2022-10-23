@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/defect-pipe-reinstall.mp3-99537465329bac48a0d98ca7ed890b8a.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/inventory_reactions/defect-pipe-reinstall.mp3"
+dest_files=[ "res://.import/defect-pipe-reinstall.mp3-99537465329bac48a0d98ca7ed890b8a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

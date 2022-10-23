@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://rooms/BackButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/texture/ElevatorMain/Room_MaintenanceShaftInterior.png" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://objects/ElevatorMain/Wartungsschacht/Pipe_Spacer/Pipe_Spacer.tres" type="Resource" id=11]
 [ext_resource path="res://objects/ElevatorMain/Wartungsschacht/Pipe_Functional/Pipe_Functional.tres" type="Resource" id=12]
 [ext_resource path="res://objects/ElevatorMain/Wartungsschacht/Pipe_Spacer/Pipe_Spacer_Inventory.tres" type="Resource" id=13]
+[ext_resource path="res://objects/ElevatorMain/Wartungsschacht/DefectPipeOnPipePlaceholder.tres" type="Resource" id=14]
 
 [node name="Wartungsschacht" type="Control"]
 anchor_right = 1.0
@@ -57,7 +58,7 @@ margin_top = 414.0
 margin_right = -531.0
 margin_bottom = -100.0
 actions = [ ExtResource( 11 ) ]
-inventory_actions = [ ExtResource( 13 ) ]
+inventory_actions = [ ExtResource( 13 ), ExtResource( 14 ) ]
 
 [node name="Pipe_Defect" parent="." groups=["Pipe_Defect"] instance=ExtResource( 3 )]
 margin_left = 1128.0
