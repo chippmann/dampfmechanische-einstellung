@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/door-destroy.mp3-42dd022bd9efd81ec3e0e1fcfb933e86.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/inventory_reactions/door-destroy.mp3"
+dest_files=[ "res://.import/door-destroy.mp3-42dd022bd9efd81ec3e0e1fcfb933e86.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
