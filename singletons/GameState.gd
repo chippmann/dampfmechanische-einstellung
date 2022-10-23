@@ -12,6 +12,8 @@ enum Stage {
 	ACT_1_Tableau,
 	ACT_1_Wartungsschacht,
 	EPILOGUE,
+	CREDITS,
+	MAINMENU,
 }
 
 var show_clickable_outline: bool setget _set_show_clickable_outline
@@ -66,6 +68,8 @@ func _scene_path_from_stage(stage: int) -> String:
 		GameState.Stage.ACT_1_Tableau: return "res://rooms/Tableau.tscn"
 		GameState.Stage.ACT_1_Wartungsschacht: return "res://rooms/Wartungsschacht.tscn"
 		GameState.Stage.EPILOGUE: return "res://stages/99_Epilogue.tscn"
+		GameState.Stage.CREDITS: return "res://stages/999_Credits.tscn"
+		GameState.Stage.MAINMENU: return "res://ui/menu/main_menu/MainMenu.tscn"
 		_: return "res://stages/00_Prologue.tscn"
 
 
