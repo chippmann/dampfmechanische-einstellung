@@ -20,6 +20,16 @@ _global_script_classes=[ {
 "path": "res://objects/ElevatorMain/Bedienfeld/BedienfeldAction.gd"
 }, {
 "base": "Reference",
+"class": "BedienfeldButtons229Action",
+"language": "GDScript",
+"path": "res://objects/ElevatorMain/Bedienfeld/BedienfeldButtons/BedienfeldButtons2-29Action.gd"
+}, {
+"base": "Reference",
+"class": "BedienfeldButtons229Condition",
+"language": "GDScript",
+"path": "res://objects/ElevatorMain/Bedienfeld/BedienfeldButtons/BedienfeldButtons2-29Condition.gd"
+}, {
+"base": "Reference",
 "class": "CanInventoryDropCondition",
 "language": "GDScript",
 "path": "res://objects/base/resources/inventory/InventoryDropCondition.gd"
@@ -282,6 +292,8 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Action": "",
 "BedienfeldAction": "",
+"BedienfeldButtons229Action": "",
+"BedienfeldButtons229Condition": "",
 "CanInventoryDropCondition": "",
 "Condition": "",
 "ContinueButton": "",

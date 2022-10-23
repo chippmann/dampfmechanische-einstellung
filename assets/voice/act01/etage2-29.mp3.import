@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/etage2-29.mp3-7627231a1e8dab4a23fd42a0e3912536.mp3str"
+
+[deps]
+
+source_file="res://assets/voice/act01/etage2-29.mp3"
+dest_files=[ "res://.import/etage2-29.mp3-7627231a1e8dab4a23fd42a0e3912536.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
