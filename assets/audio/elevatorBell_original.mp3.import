@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/elevatorBell_original.mp3-82af75dee0a849eeeee0162664fa5f0f.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/elevatorBell_original.mp3"
+dest_files=[ "res://.import/elevatorBell_original.mp3-82af75dee0a849eeeee0162664fa5f0f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

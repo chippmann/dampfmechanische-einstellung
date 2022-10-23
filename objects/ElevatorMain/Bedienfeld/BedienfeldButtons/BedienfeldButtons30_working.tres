@@ -11,5 +11,5 @@ name = "BedienfeldButtons30_working"
 audio = ExtResource( 2 )
 conditionScript = ExtResource( 4 )
 actionScript = ExtResource( 3 )
-actionWaitsForAudio = false
+actionWaitsForAudio = true
 playerWalkBeforeAction = false
